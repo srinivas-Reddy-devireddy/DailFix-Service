@@ -493,13 +493,13 @@ import { Link } from "react-router-dom";
         >
           <ul>
             <li>
-              <p onClick={() => { setMenu('home'); setShowMediaIcons(false); }}> <Link to="/"   className='Link'>Home</Link></p> 
-              {menu === "home" ? <hr /> : ''}
+              <p > <Link to="/"   className='Link'>Home</Link></p> 
+              
             </li>
             <li>
-              <p onClick={() => { setMenu('Products'); setShowMediaIcons(false); }}><Link to="/about"  className='Link'> About</Link>
+              <p ><Link to="/about"  className='Link'> About</Link>
              </p> 
-              {menu === "Products" ? <hr /> : ''}
+             
             </li>
             <li>
               {/* Services menu with dropdown */}
@@ -521,21 +521,21 @@ import { Link } from "react-router-dom";
                 {/* Dropdown items */}
                 {showServicesDropdown && (
                   <ul className="dropdown-menu">
-                    <li onClick={() => { setMenu('service1'); setShowServicesDropdown(false); }}> <Link to="Washing-Machine"   className='Link'>Washing Machine Repair</Link></li>
-                    <li onClick={() => { setMenu('service2'); setShowServicesDropdown(false); }}> <Link to="/"   className='Link'>Refrigerator Repair</Link></li>
-                    <li onClick={() => { setMenu('service3'); setShowServicesDropdown(false); }}><Link to="/"   className='Link'>Air Conditioner</Link></li>
-                    <li onClick={() => { setMenu('service2'); setShowServicesDropdown(false); }}> <Link to="/Television "   className='Link'>Television Repair</Link></li>
+                    <li > <Link to="Washing-Machine"   className='Link'>Washing Machine Repair</Link></li>
+                    <li > <Link to="/"   className='Link'>Refrigerator Repair</Link></li>
+                    <li ><Link to="/"   className='Link'>Air Conditioner</Link></li>
+                    <li > <Link to="/Television "   className='Link'>Television Repair</Link></li>
 
-                    <li onClick={() => { setMenu('service2'); setShowServicesDropdown(false); }}> <Link to="/Geyser"   className='Link'>Geyser Repair</Link></li>
-                    <li onClick={() => { setMenu('service3'); setShowServicesDropdown(false); }}> <Link to="/Microwave"   className='Link'>Microwave Repair</Link></li>
+                    <li > <Link to="/Geyser"   className='Link'>Geyser Repair</Link></li>
+                    <li > <Link to="/Microwave"   className='Link'>Microwave Repair</Link></li>
                   </ul>
                 )}
               </div>
             </li>
            
             <li>
-              <p onClick={() => { setMenu('Contact'); setShowMediaIcons(false); }}> <Link to="/contact" className='Link'>Contact</Link></p> 
-              {menu === "Contact" ? <hr /> : ''}
+              <p> <Link to="/contact" className='Link'>Contact</Link></p> 
+             
             </li>
           </ul>
         </div>
