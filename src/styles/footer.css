@@ -1,0 +1,116 @@
+.footer{
+  padding:30px;
+  width: 100%;
+  margin: auto;
+  background-color: #4a154b;
+  color: #ffffff;
+  
+  
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.footer-container{
+  display: flex;
+  justify-content:start;
+  align-items: start;
+  flex-wrap: 1;
+  
+}
+.privacy-container ,.contact--info , .ourservices-info{
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+  flex: 1 ;
+ 
+}
+.map-container{
+
+  flex: 1;
+}
+
+.privacy-container h3{
+  color: rgb(243, 166, 2);
+  font-size: 20px;
+  font-weight: 800;
+
+}.privacy-container p{
+  color: rgb(255, 252, 252);
+  font-size: 18px;
+ font-weight: 500;
+ margin-top: -2px;
+}
+.contact--info h2 ,.ourservices-info h2{
+  color: rgb(2, 232, 244);
+  font-size: 26px;
+  font-weight: 700;
+}.contact--info p  {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+ 
+}
+.contact--info p a {
+  color: white;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 6px;
+} .contact--info p a:hover {
+  color: blue;
+  
+}
+.cell-icon-f{
+  color: skyblue;
+  margin-bottom: -3px;
+}.email-icon-f{
+  color: rgb(215, 107, 107);
+  margin-bottom: -3px;
+}.location-icon-f{
+  color: orangered;
+  margin-bottom: -3px;
+  margin-right: 10px;
+}
+.ourservices-info ul {
+ margin-top: -12px;
+  }
+.ourservices-info ul li{
+margin: 10px;
+font-size: 19px;
+color: white; cursor: pointer;
+}.ourservices-info ul li:hover{
+ 
+  color: blue;
+  }
+  .full-width {
+   margin-top: 20px;
+   margin-bottom: 10px;
+    height: 1px;
+    border: 2px solid rgb(118, 115, 115);
+}
+
+
+.copy-right{
+  text-align: center !important;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.developer {
+  /* position: relative; */
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(81, 70, 70); /* Optional styling for "SRNDEV" */
+}
+@media (max-width: 768px) {
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    flex-wrap: 1;
+    gap: 20px;
+    
+  }
+}
+

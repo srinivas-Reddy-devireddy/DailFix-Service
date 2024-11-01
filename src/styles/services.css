@@ -1,0 +1,357 @@
+.service-section {
+    padding:0px 0px;
+    width: 100%;
+    margin: auto;
+  }
+/* washing page css container  */
+
+  .service-washing-background-image {
+ background-image: url("../assets/Untitled\ design\ \(6\).png");
+ text-align: center;
+  color: black;
+  background-size: cover;
+  background-position: center;
+  height: 360px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  } 
+  .container-row{
+    display: flex;
+    width: 100%;
+    padding: 10px 30px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.8s ease; /* Fade-in effect */
+    flex-wrap: wrap;
+
+  }
+  
+/* Animation keyframes */
+@keyframes slideIn {
+    from {
+      transform: translateY(100%); /* Start from below the view */
+      opacity: 0; /* Start transparent */
+    }
+    to {
+      transform: translateY(0); /* End at the original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  /* Class to apply the animation */
+  .slide-in {
+    animation: slideIn 3.9s ease forwards; /* 0.8s duration and ease-in effect */
+  }
+.service-img-container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   
+}
+ .service-img-container img {
+    width: 500px;
+    height:530px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+   } 
+
+
+.service-content-section{
+    flex: 2;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.service-content-section h1{
+   color: blue;
+   font-size: 28px;
+   font-weight: 600;
+}
+.service-content-section p{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 6px;
+    letter-spacing: 0.2px;
+ }
+ .service-content-section ul{
+    margin: 10px;
+    margin-left: 18px;
+ } .service-content-section ul li{
+    color: black;
+    font-size: 17px;
+    margin: 6px;
+ }.service-content-section ul li span{
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+ }
+
+
+
+ .service-section-row{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+    padding: 10px 18px;
+    border-radius: 6px;
+  }
+
+.service-offered{
+flex: 1;
+}
+.why-choose-us{
+    flex: 1; 
+}
+.service-offered h2,.why-choose-us h2 {
+    color: rgba(239, 101, 2, 0.941);
+    font-weight: 600;
+    }
+
+
+    .faq-contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 16px 60px;
+    }
+
+.faq-section{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+.service-contact{
+    flex: 1;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+   
+  
+}
+.call-book{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+gap: 20px;
+}
+.call-book button{
+   padding: 10px 40px;
+   border-radius: 4px;
+  font-size: 18px;
+   border: 1px solid gray;
+   display: inline-block;
+    color: #fff;
+   text-decoration: none; /* Remove underline */
+   border-radius: 5px;
+   font-size: 16px;
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  }
+   .call-book button:first-child{
+    background-color: #28a745; /* Green color for call link */
+ 
+   } .call-book button:first-child:hover{
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+   }
+   .call-book button:last-child{
+    background-color: blue; /* Green color for call link */
+    font-size: 19px;
+   }.call-book button:last-child:hover{
+    background-color: rgb(2, 2, 84);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+   }.call-book button a{
+   color: white;
+   text-decoration: none;
+    font-size: 19px;
+   }
+
+ /* washing page css container  */
+    
+ .service-washing-background-image {
+    background-image: url("../assets/Untitled\ design\ \(6\).png");
+    text-align: center;
+     color: black;
+     background-size: cover;
+     background-position: center;
+     height: 360px;
+     text-align: center;
+     align-items: center;
+     align-self: center;
+     display: flex;
+     justify-content: center;
+     } 
+
+   /* MicrowaveRepair css style  */
+   .service-Microwave-background-image {
+    background-image: url("../assets/Untitled\ design\ \(9\).png");
+    text-align: center;
+     color: black;
+     background-size: cover;
+     background-position: center;
+     height: 360px;
+     text-align: center;
+     align-items: center;
+     align-self: center;
+     display: flex;
+     justify-content: center;
+     } 
+  
+      /* television repair css  */
+      .service-Television-background-image {
+        background-image: url("../assets/Untitled\ design\ \(12\).png");
+        text-align: center;
+         color: black;
+         background-size: cover;
+         background-position: center;
+         height: 360px;
+         text-align: center;
+         align-items: center;
+         align-self: center;
+         display: flex;
+         justify-content: center;
+         } 
+  /* geyeser repair css  */
+  .service-geyeser-background-image {
+    background-image: url("../assets/Untitled\ design\ \(13\).png");
+    text-align: center;
+     color: black;
+     background-size: cover;
+     background-position: center;
+     height: 360px;
+     text-align: center;
+     align-items: center;
+     align-self: center;
+     display: flex;
+     justify-content: center;
+     } 
+  /* Responsive Design */
+  @media (max-width: 768px) {
+ 
+
+    .service-section {
+      
+      }
+   
+      .container-row{
+  
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       align-self: center;
+        padding: 10px 10px;
+      
+    
+      }
+      
+
+    
+    .service-img-container{
+        flex: 1;
+        width: 100%;
+        padding:10px 20px ;
+        display: flex;
+        justify-content: center;
+       
+    }
+     .service-img-container img {
+        width: 290px;
+        height:290px;
+      margin-bottom: 10px;
+       } 
+    
+    
+    .service-content-section{
+      
+        padding: 16px;
+       
+    }
+    
+    .service-content-section h1{
+     
+       font-size: 26px;
+       
+    }
+    .service-content-section p{
+      margin: 0px;
+      margin-top: 10px;
+       
+     }
+     .service-content-section ul{
+        margin: 0px;
+        margin-left: 10px;
+     } 
+    
+    
+     .service-section-row{
+      
+        flex-direction: column;
+       padding: 10px 12px;
+       
+      }
+    
+    .service-offered{
+    flex: 1;
+    }
+    .why-choose-us{
+        flex: 1; 
+    }
+    .service-offered h2,.why-choose-us h2 {
+        color: rgba(239, 101, 2, 0.941);
+        font-weight: 600;
+        }
+    
+    
+        .faq-contact-container{
+           
+            flex-direction: column;
+         justify-content: center;
+            padding: 16px 18px;
+        }
+    
+   
+    .service-contact{
+       margin-top: 10px;
+       
+      
+    }
+   
+    .call-book button{
+       padding: 10px 36px;
+    
+      }
+      
+      .service-washing-background-image {
+      height: 190px;
+        
+         } 
+           /* MicrowaveRepair css style  */
+   .service-Microwave-background-image {
+  
+     height: 190px;
+   
+     } 
+  
+      /* television repair css  */
+      .service-Television-background-image {
+      
+         height: 190px;
+       
+         } 
+  /* geyeser repair css  */
+  .service-geyeser-background-image {
+   
+     height: 190px;
+    
+     } 
+
+  }
+  

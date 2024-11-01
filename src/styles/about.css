@@ -1,0 +1,306 @@
+.about-section {
+    padding:0px 0px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .background-image {
+    background-image: url('https://www.shutterstock.com/image-photo/air-conditioner-maintenance-male-technician-600nw-2473467597.jpg');
+   text-align: center;
+ color: black;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  }
+
+.about-container{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.about{
+  color: white;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.welcome-heading{
+ color: blue;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ font-weight: 600;
+ font-size: 28px;
+}
+
+.fade-up{
+    color: gray;
+    text-align: left;
+    margin-top: 10px;
+  
+    font-weight: 600;
+    font-size: 20px;
+}
+.life-text{
+    color: black;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px; 
+}
+.ouraboutservice{
+    display: flex;
+    justify-content: space-around;
+  
+    background-color: rgb(246, 240, 240);
+    padding:30px;
+    margin: 20px 30px;
+  }
+  .fade-up-bottom{
+    color: black;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .contact-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  /* quick-service-section */
+
+
+  .why-choose-list, .why-choose-list {
+  
+    list-style-type: circle !important;
+    padding: 0;
+   
+  }
+  
+  .service-list li, .why-choose-list li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .service-icon {
+    margin-right: 8px;
+    color: #007bff;
+  }
+  .quick-service-section-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #1d1b7f, #93007d);
+    padding: 1.5rem 3rem;
+    color: white;
+    margin-top: 12px;
+  }
+  .quick-service-section-about h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .quick-service-section-about p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0;
+    color: #d3d3d3;
+  }
+  
+  .book-service-button {
+    background-color: #e68739;
+    color: white;
+    padding: 0.95rem 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .book-service-button span {
+    background-color: #e68739;
+    color: white;
+    padding: 0.95rem 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+
+  .book-service-button:hover {
+    background-color: green;
+    transform: scale(1.1);
+  }
+  .contact-section button {
+    font-size: 1.2em;
+    color: white;
+    padding: 12px 16px;
+    background-color: orange;
+    border: 1px solid gray;
+    border-radius: 4px;
+  }
+  
+  .contact-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* .ouraboutserices{
+    display: flex;
+    justify-content: space-around;
+  }
+  .about-header h1, .about-header h2 {
+    color: black;
+    text-align: center;
+  }
+  
+  .about-content p, .contact-section p, .about-footer p {
+    line-height: 1.6;
+    color: black;
+  }
+  
+  .service-list, .why-choose-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .service-list li, .why-choose-list li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .service-icon {
+    margin-right: 8px;
+    color: #007bff;
+  }
+  
+  .contact-section h3 {
+    font-size: 1.2em;
+    color: #007bff;
+  }
+  
+  .contact-section a {
+    color: #007bff;
+    text-decoration: none;
+  } */
+  
+  /* AOS fade-up animation */
+  /* [data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  [data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-section {
+        padding:10px 4px;
+        
+      }
+      
+      .background-image {
+       height: 200px;
+      }
+    
+    .about-container{
+        padding: 10px 20px;
+       
+    }
+    
+    
+    .welcome-heading{
+    
+     font-size: 20px;
+    }
+    
+    .fade-up{
+        
+        font-size: 17px;
+    }
+    .life-text{
+      
+        font-size: 15px; 
+    }
+    .ouraboutservice{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding:10px;
+        margin: 10px 6px;
+      }
+      .fade-up-bottom{
+        color: grey;
+        font-weight: 500;
+        font-size: 16px;
+      }
+     .service-list, .why-choose-list  {
+        list-style-type: decimal !important;
+        font-size: 15px;
+     
+      }
+      
+     .ouser-heading{
+        font-size: 17px;
+     }
+      
+      .service-icon {
+        margin-right: 8px;
+        color: #007bff;
+      }
+      .quick-service-section-about{
+       
+        flex-direction: column;
+        padding: 1.1rem 1rem;
+      
+      }
+      .quick-service-section-about h2 {
+        font-size: 1.1rem;
+       
+      }
+      
+      .quick-service-section-about p {
+        font-size: 0.9rem;
+       
+      }
+      
+      .book-service-button {
+        
+        padding: 0.85rem 1.3rem;
+       
+      }
+      
+     
+      .contact-section button {
+        font-size: 1em;
+       
+        padding: 10px 8px;
+      }
+      
+      .about{
+        color: white;
+        font-weight: 900;
+        padding-top: 20px;
+      }
+  }
+  
