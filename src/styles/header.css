@@ -11,6 +11,7 @@
   font-weight: 700;
   cursor: pointer;
   color: black;
+  border: none;
 }
 .header-top{
   width: 100%;
@@ -224,6 +225,7 @@ hr{
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  border: none;
  
 }
 .line{
@@ -235,6 +237,7 @@ hr{
   transition: color 0.3s;
   font-weight: bold;
   font-size: 16px;
+  border: none;
   
  
 }
@@ -242,6 +245,7 @@ hr{
 .menu-link ul li:hover p {
   color: #007bff;
   margin-top: 2px;
+  border: none;
 }
 
 .menu-link ul li hr {
@@ -298,6 +302,9 @@ hr{
 }
 /* Media Queries */
 @media (max-width: 768px) {
+ .Link{
+  border: none;
+ } 
   .header-top{
    display: none;
     
