@@ -166,6 +166,7 @@ import WashingMachineRepair from './pages/services/WashingMachineRepair';
 import MicrowaveRepair from './pages/services/MicrowaveRepair';
 import TelevisionRepair from './pages/services/TelevisionRepair';
 import GeyserRepair from './pages/services/GeyeserRepair';
+import NotFound from './pages/NotFound';
 
 function App() {
   const [submittedData, setSubmittedData] = useState([]);
@@ -182,6 +183,7 @@ function App() {
           <Route path="/Television" element={<TelevisionRepair/>} />
          <Route path="/Geyser" element={<GeyserRepair/>} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} /> {/* 404 Route */}
           {/* <Route path="/contact" element={<ContactForm setSubmittedData={setSubmittedData} />} />
           <Route path="/submitted" element={<SubmittedData submittedData={submittedData} />} /> */}
         </Routes>
@@ -190,10 +192,10 @@ function App() {
 
       {/* Floating Round Icon Buttons */}
       <div className="floating-icons">
-        <a href="tel:+9908305008" className="icon-button call" aria-label="Call">
+        <a href="tel:+9133870617" className="icon-button call" aria-label="Call">
           <FaPhoneAlt />
         </a>
-        <a href="https://wa.me/9908305008" target="_blank" rel="noopener noreferrer" className="icon-button whatsapp" aria-label="WhatsApp">
+        <a href="https://wa.me/9133870617" target="_blank" rel="noopener noreferrer" className="icon-button whatsapp" aria-label="WhatsApp">
           <FaWhatsapp />
         </a>
       </div>

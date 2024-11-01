@@ -76,7 +76,6 @@
 // export default Form
 
 
-
 import React, { useEffect, useState } from 'react';
 import '../styles/home.css';
 
@@ -107,24 +106,23 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
-        // Construct the message for WhatsApp
-        const { name, mobile, address, serviceType } = formData;
-        const message = `New Service Request:
-        \nName: ${name}
-        \nMobile: ${mobile}
-        \nAddress: ${address}
-        \nService Type: ${serviceType}`;
 
-        // Encode the message for the URL
+        const { name, mobile, address, serviceType } = formData;
+        const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}`;
+        
+        // Encode the message for URL
         const whatsappMessage = encodeURIComponent(message);
+        
+        // WhatsApp API URL
         const whatsappUrl = `https://wa.me/919133870617?text=${whatsappMessage}`;
 
+        // Show alert
+        alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
+        
         // Open the WhatsApp link in a new tab
         window.open(whatsappUrl, '_blank');
 
-        // Show alert and reset form fields
-        alert("Submission completed successfully");
+        // Reset the form
         setFormData({
             name: '',
             mobile: '',
