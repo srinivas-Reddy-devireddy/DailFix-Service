@@ -284,7 +284,7 @@ const HomeContent = () => {
               <p className='left-contnat'>Trusted experts with over 10+ years of top repair service in Hyderabad.</p>
               <p className='left-contnat-2'>Certified, skilled, and ready to resolve issues fast.</p>
 
-              <button className='left-side-button'> 📞 Call Now</button>
+              <button className='left-side-button'> <a  href="tel:+9908305008">📞 Call Now</a></button>
             </div>
 
          
@@ -303,7 +303,7 @@ const HomeContent = () => {
              <div className=''>
 
               <p className="call-text">Give missed call to book</p>
-              <p className="phone-number">📞 08144 948 948</p>
+              <p className="phone-number"> <a  href="tel:+9908305008"  className=''>📞 08144 948 948</a></p>
 
             <div className="features">
                 <div className="feature">

@@ -250,7 +250,7 @@ const Home2 = () => {
      <h2>Book us for a completely <span>100% hassle-free</span> experience</h2>
         <div className="feature-steps">
           <div className="feature-step ">
-          <a href="tel:+9133870617" className="cta-button">
+          <a href="tel:+9908305008" className="cta-button">
           <div className="icon-circle call-hover">
               <FaPhoneAlt className="feature-icon" />
             </div>

@@ -436,7 +436,7 @@ hr{
     margin:0px;
     color: black;
     transition: color 0.3s;
-    border: 1px solid red 100%;
+    /* border: 1px solid red 100%; */
     text-align: left;
    
    }

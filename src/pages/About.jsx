@@ -74,7 +74,7 @@ const About = () => {
         <p>Our Experienced Repair Technicians are Available 7:00 AM to 11:00 PM Everyday</p>
       </div>
       <a href="/book-service" className="book-service-button">
-        <span role="img" aria-label="phone">📞 Book Service Now</span>
+        <span role="img" aria-label="phone"> Book Service Now</span>
       </a>
     </section>
 

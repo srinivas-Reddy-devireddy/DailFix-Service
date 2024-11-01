@@ -541,12 +541,12 @@ import { Link } from "react-router-dom";
         </div>
 
 
-        <div className='phone-container' >
+      <div className='phone-container' >
 
           <div className='phone'>
           <FaPhone  className='phone-icon' />
           </div>
-          <p>9441247387</p>
+          <p>9908305008</p>
           
         </div>
         
