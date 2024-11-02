@@ -102,7 +102,7 @@ const WashingMachineRepair = () => {
           <h2>Contact Us</h2>
           <div className='call-book'>
           <button>  <a 
-    href="tel:+19133870617" 
+    href="tel:+19908305008" 
     className="call-link"
   >
     📞 Call Now

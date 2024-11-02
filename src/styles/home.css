@@ -10,6 +10,7 @@
   padding: 16px;
 }
 
+
 .content-home {
   display: flex;
   flex-direction: column;
@@ -87,6 +88,10 @@
   border: 1px solid orange !important;
   border-radius: 4px;
 }
+.left-side-button a{
+text-decoration: none;
+color: white;
+}
 .left-side-display-services .left-side-button:hover {
   background-color: green !important;
   border: 1px solid green !important;
@@ -151,12 +156,14 @@ input, select {
 }
 .dots-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
   align-items: center;
   color: black;
   font-weight: bold;
   font-size: 18px;
+  
 }
 .status{
   color: rgb(59, 54, 54);
@@ -166,6 +173,7 @@ input, select {
   width: 13px;
   height: 13px;
   border-radius: 50%;
+  
 }
 
 /* Green Dot with Heartbeat Animation */
@@ -198,7 +206,7 @@ input, select {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 30px;
  
 
 }
@@ -229,17 +237,22 @@ input, select {
 
 
 .call-text{
-  color: white;
+  color:ghostwhite;
   font-size: 30px !important;
-  font-weight: bold;
+  font-weight:900;
 }
 .phone-number{
-  color: white;
+  color: rgb(68, 64, 64);
   font-size: 23px !important;
   font-weight: bold;
 }
 
-
+.phone-number a{
+  color: ghostwhite;
+  font-size: 23px !important;
+  font-weight: 800;
+  text-decoration: none;
+}
 
 
 .features {
@@ -467,6 +480,7 @@ list-style-type: square;
 .feature-section {
   padding: 2rem 1rem;
   text-align: center;
+  
 }
 
 .feature-section h2 {
@@ -504,8 +518,8 @@ list-style-type: square;
   margin: 0 auto 1rem;
 
 }.icon-circle:hover {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   
   background-color: orange; /* Icon background color */
  
@@ -730,8 +744,8 @@ list-style-type: square;
 
 
 .icon-circle:hover {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   background-color: orange; /* Icon background color */
  
 }
@@ -1029,12 +1043,12 @@ list-style-type: square;
   
   
   .call-text{
-    color: white;
+    color:rgb(229, 244, 236);
     font-size: 25px !important;
     font-weight: 700;
   }
-  .phone-number{
-    color: white;
+  .phone-number a{
+    color:rgb(222, 242, 232);
     font-size: 24px !important;
     font-weight: bold;
   }

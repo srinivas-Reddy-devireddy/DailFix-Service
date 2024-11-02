@@ -180,12 +180,20 @@ const Form = () => {
             <p className="status-text">
                 {isOnline ? (
                     <div className="dots-container">
-                        <div className="dot green-dot"></div>Online (7 AM To 11 PM)
+                        <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"6px"}}>
+                        <div className="dot green-dot"></div> 
+                        <h3 >Online (7 AM To 11 PM)</h3>
+                        </div>
+                        
                         <p className="status">Our expert will call you within 5 to 10 minutes</p>
                     </div>
                 ) : (
                     <div className="dots-container">
-                        <div className="dot red-dot"></div>Offline
+                        <div style={{display:"flex",justifyContent:"center",alignItems:"center",gap:"6px"}}>
+                        <div className="dot red-dot"></div>
+                        <h3> Offline</h3>
+                        </div>
+                       
                         <p>Our expert is available from 7 AM to 11 PM</p>
                     </div>
                 )}

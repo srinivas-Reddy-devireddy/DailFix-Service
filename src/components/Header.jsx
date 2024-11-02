@@ -444,6 +444,128 @@
 // export default Navbar;
 
 
+// import React, { useState } from 'react';
+// import { FaBars, FaTimes, FaPhone, FaAngleDown, FaAngleUp } from "react-icons/fa";
+// import '../styles/header.css';
+// import dfs from '../assets/dfs-logo-letter-monogram-design-600nw-2481791937(1)(1).png'
+// import { FaArrowRight } from "react-icons/fa";
+// import { IoLocationOutline } from "react-icons/io5";
+// import { BsClockHistory } from "react-icons/bs";
+// import { Link } from "react-router-dom";
+
+//   const Navbar = ({ setShow, size }) => {
+//   const [showMediaIcons, setShowMediaIcons] = useState(false);
+//   const [menu, setMenu] = useState('home');
+//   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+
+//   return (
+//     <>
+//     <div className='header-top'>
+//       <div>
+//       <p> <IoLocationOutline className='icons-header' />DailFix Services Secunderabad, Hyderabad </p>
+//       <p>
+//         < BsClockHistory  className='icons-header' />Monday - Sunday: 7:00AM - 11:00PM</p>
+   
+
+//       </div>
+//       <button className='top-button'>Quick Booking Service <FaArrowRight  className='icons-header'/></button>
+//     </div>
+//       <nav className="main-nav">
+//         {/* 1st logo part */}
+
+//         <div className='logo-section'>
+//           <img src={dfs} alt="" />
+//           <div className="logo" onClick={() => setShow(true)}>
+//             <h2>
+//               <span>D</span>ail
+//               <span>F</span>ix
+//               <span> S</span>ervices
+//             </h2>
+//           </div>
+         
+//         </div>
+
+
+//         {/* 2nd menu part */}
+//         <div
+//           className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}
+//           onClick={() => setShowMediaIcons(!showMediaIcons)}
+//         >
+//           <ul>
+//             <li>
+//               <p > <Link to="/"   className='Link'>Home</Link></p> 
+              
+//             </li>
+//             <li>
+//               <p ><Link to="/about"  className='Link'> About</Link>
+//              </p> 
+             
+//             </li>
+//             <li>
+//               {/* Services menu with dropdown */}
+//               <div
+//                 className="services-menu"
+//                 onClick={(e) => {
+//                   e.stopPropagation(); // Prevents the dropdown from closing on click
+//                   setShowServicesDropdown(!showServicesDropdown);
+//                 }}
+//               >
+//                 <p onClick={() => { setMenu('Features') }}>
+//                   Services {menu === "Features" ? <hr /> : ''}
+//                 </p>
+//                 {/* Dropdown arrow/close icon */}
+//                 <span className="dropdown-icon">
+//                   {showServicesDropdown ?<FaAngleUp /> :<FaAngleDown />}
+//                 </span>
+     
+//                 {/* Dropdown items */}
+//                 {showServicesDropdown && (
+//                   <ul className="dropdown-menu">
+//                     <li > <Link to="Washing-Machine"   className='Link'>Washing Machine Repair</Link></li>
+//                     <li > <Link to="/"   className='Link'>Refrigerator Repair</Link></li>
+//                     <li ><Link to="/"   className='Link'>Air Conditioner</Link></li>
+//                     <li > <Link to="/Television "   className='Link'>Television Repair</Link></li>
+
+//                     <li > <Link to="/Geyser"   className='Link'>Geyser Repair</Link></li>
+//                     <li > <Link to="/Microwave"   className='Link'>Microwave Repair</Link></li>
+//                   </ul>
+//                 )}
+//               </div>
+//             </li>
+           
+//             <li>
+//               <p> <Link to="/contact" className='Link'>Contact</Link></p> 
+             
+//             </li>
+//           </ul>
+//         </div>
+
+
+//       <div className='phone-container' >
+
+//           <div className='phone'>
+//           <FaPhone  className='phone-icon' />
+//           </div>
+//           <p>9908305008</p>
+          
+//         </div>
+        
+       
+//         {/* 3rd social media links */}
+//         <div className="social-media">
+//           {/* Hamburger menu start */}
+//           <div className="hamburger-menu" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+//             {showMediaIcons ? <FaTimes /> : <FaBars />}
+//           </div>
+//         </div>
+//       </nav>
+//     </>
+//   );
+// };
+
+// export default Navbar;
+
+
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaPhone, FaAngleDown, FaAngleUp } from "react-icons/fa";
 import '../styles/header.css';
@@ -451,55 +573,65 @@ import dfs from '../assets/dfs-logo-letter-monogram-design-600nw-2481791937(1)(1
 import { FaArrowRight } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { BsClockHistory } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-  const Navbar = ({ setShow, size }) => {
+const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   const [menu, setMenu] = useState('home');
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
+  const location = useLocation();
+
+  // Update active link based on the current path
+  const handleLinkClick = (name) => {
+    setMenu(name);
+    setShowMediaIcons(false);  // Close the mobile menu
+    setShowServicesDropdown(false);  // Close the services dropdown
+  };
 
   return (
     <>
-    <div className='header-top'>
-      <div>
-      <p> <IoLocationOutline className='icons-header' />DailFix Services Secunderabad, Hyderabad </p>
-      <p>
-        < BsClockHistory  className='icons-header' />Monday - Sunday: 7:00AM - 11:00PM</p>
-   
-
+      <div className='header-top'>
+        <div>
+          <p> <IoLocationOutline className='icons-header' />DailFix Services Secunderabad, Hyderabad </p>
+          <p>
+            < BsClockHistory  className='icons-header' />Monday - Sunday: 7:00AM - 11:00PM
+          </p>
+        </div>
+        <button className='top-button'>Quick Booking Service <FaArrowRight className='icons-header'/></button>
       </div>
-      <button className='top-button'>Quick Booking Service <FaArrowRight  className='icons-header'/></button>
-    </div>
       <nav className="main-nav">
         {/* 1st logo part */}
-
+        <Link to="/" className='Link'> 
         <div className='logo-section'>
-          <img src={dfs} alt="" />
-          <div className="logo" onClick={() => setShow(true)}>
+         
+          <img src={dfs} alt="Logo" />
+          <div className="logo" >
             <h2>
               <span>D</span>ail
               <span>F</span>ix
               <span> S</span>ervices
             </h2>
           </div>
-         
-        </div>
-
+        </div></Link>
 
         {/* 2nd menu part */}
-        <div
-          className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}
-          onClick={() => setShowMediaIcons(!showMediaIcons)}
-        >
+        <div className={showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"}>
           <ul>
             <li>
-              <p > <Link to="/"   className='Link'>Home</Link></p> 
-              
+              <p 
+                className={menu === 'home' ? 'active-link' : ''} 
+                onClick={() => handleLinkClick('home')}
+              >
+                <Link to="/" className='Link'>Home</Link>
+              </p> 
             </li>
             <li>
-              <p ><Link to="/about"  className='Link'> About</Link>
-             </p> 
-             
+              <p 
+                className={menu === 'about' ? 'active-link' : ''} 
+                onClick={() => handleLinkClick('about')}
+              >
+                <Link to="/about" className='Link'>About</Link>
+              </p> 
             </li>
             <li>
               {/* Services menu with dropdown */}
@@ -510,50 +642,62 @@ import { Link } from "react-router-dom";
                   setShowServicesDropdown(!showServicesDropdown);
                 }}
               >
-                <p onClick={() => { setMenu('Features') }}>
-                  Services {menu === "Features" ? <hr /> : ''}
+                <p 
+                  onClick={() => setMenu('services')}
+                  className={menu === 'services' ? 'active-link' : ''}
+                >
+                  Services {menu === "services" ? <hr /> : ''}
                 </p>
                 {/* Dropdown arrow/close icon */}
                 <span className="dropdown-icon">
-                  {showServicesDropdown ?<FaAngleUp /> :<FaAngleDown />}
+                  {showServicesDropdown ? <FaAngleUp /> : <FaAngleDown />}
                 </span>
-     
+
                 {/* Dropdown items */}
                 {showServicesDropdown && (
                   <ul className="dropdown-menu">
-                    <li > <Link to="Washing-Machine"   className='Link'>Washing Machine Repair</Link></li>
-                    <li > <Link to="/"   className='Link'>Refrigerator Repair</Link></li>
-                    <li ><Link to="/"   className='Link'>Air Conditioner</Link></li>
-                    <li > <Link to="/Television "   className='Link'>Television Repair</Link></li>
-
-                    <li > <Link to="/Geyser"   className='Link'>Geyser Repair</Link></li>
-                    <li > <Link to="/Microwave"   className='Link'>Microwave Repair</Link></li>
+                    <li onClick={() => handleLinkClick('washing')}>
+                      <Link to="/Washing-Machine" className='Link'>Washing Machine Repair</Link>
+                    </li>
+                    <li onClick={() => handleLinkClick('refrigerator')}>
+                      <Link to="/Refrigerator" className='Link'>Refrigerator Repair</Link>
+                    </li>
+                    <li onClick={() => handleLinkClick('ac')}>
+                      <Link to="/Air-Conditioner" className='Link'>Air Conditioner</Link>
+                    </li>
+                    <li onClick={() => handleLinkClick('tv')}>
+                      <Link to="/Television" className='Link'>Television Repair</Link>
+                    </li>
+                    <li onClick={() => handleLinkClick('geyser')}>
+                      <Link to="/Geyser" className='Link'>Geyser Repair</Link>
+                    </li>
+                    <li onClick={() => handleLinkClick('microwave')}>
+                      <Link to="/Microwave" className='Link'>Microwave Repair</Link>
+                    </li>
                   </ul>
                 )}
               </div>
             </li>
-           
             <li>
-              <p> <Link to="/contact" className='Link'>Contact</Link></p> 
-             
+              <p 
+                className={menu === 'contact' ? 'active-link' : ''} 
+                onClick={() => handleLinkClick('contact')}
+              >
+                <Link to="/contact" className='Link'>Contact</Link>
+              </p> 
             </li>
           </ul>
         </div>
 
-
-      <div className='phone-container' >
-
+        <div className='phone-container'>
           <div className='phone'>
-          <FaPhone  className='phone-icon' />
+            <FaPhone className='phone-icon' />
           </div>
           <p>9908305008</p>
-          
         </div>
-        
-       
-        {/* 3rd social media links */}
+
+        {/* Hamburger menu */}
         <div className="social-media">
-          {/* Hamburger menu start */}
           <div className="hamburger-menu" onClick={() => setShowMediaIcons(!showMediaIcons)}>
             {showMediaIcons ? <FaTimes /> : <FaBars />}
           </div>
@@ -564,4 +708,3 @@ import { Link } from "react-router-dom";
 };
 
 export default Navbar;
-

@@ -12,6 +12,14 @@
   cursor: pointer;
   color: black;
   border: none;
+}.Link:hover{
+  color: #007bff !important;
+}
+.active-link {
+  border-bottom: 3px solid orangered !important; 
+  color: #007bff !important;
+ 
+   
 }
 .header-top{
   width: 100%;
@@ -242,8 +250,8 @@ hr{
  
 }
 
-.menu-link ul li:hover p {
-  color: #007bff;
+.menu-link ul li:hover p:hover {
+  color: #007bff !important;
   margin-top: 2px;
   border: none;
 }
