@@ -195,7 +195,7 @@ function App() {
         <a href="tel:+9908305008" className="icon-button call" aria-label="Call">
           <FaPhoneAlt />
         </a>
-        <a href="https://wa.me/9908305008" target="_blank" rel="noopener noreferrer" className="icon-button whatsapp" aria-label="WhatsApp">
+        <a href="https://wa.me/919908305008" target="_blank" rel="noopener noreferrer" className="icon-button whatsapp" aria-label="WhatsApp">
           <FaWhatsapp />
         </a>
       </div>
