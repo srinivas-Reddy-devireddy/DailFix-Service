@@ -215,6 +215,7 @@ const Home2 = () => {
           <li><FaFan className="service-icon" /> Microwave Repair Services</li>
           <li><FaTv className="service-icon" /> AC Repair And Services</li>
           <li><FaWrench className="service-icon" /> Geyser Repair Services</li>
+          <li><FaTv className="service-icon" /> Television Repair</li>
         </ul>
           </div>
           <div className="why-choose">
