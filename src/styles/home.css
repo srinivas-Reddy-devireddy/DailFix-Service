@@ -70,14 +70,15 @@
 .left-contnat {
   font-size: 1.3rem; /* Increase font size for main text */
   line-height: 1.2;
-  color: orange;
-  font-weight: 600;
+  color: #004e9c;
+    font-weight: 700;
 }
 .left-contnat-2 {
   font-size: 1.2rem; /* Increase font size for main text */
   line-height: 1.2;
-  color: rgb(21, 21, 20);
-  font-weight:bold;
+  color: #d46503;
+    font-weight: 700;
+  
 }
 .left-side-display-services .left-side-button {
   background-color:orange !important;
@@ -886,8 +887,8 @@ list-style-type: square;
   .left-contnat {
     font-size: 1rem; /* Increase font size for main text */
     line-height: 1.2;
-    color: orange;
-    font-weight: 600;
+    color: #004e9c;
+    font-weight: 700;
     text-align: left;
   }
   .left-contnat-2 {
@@ -896,7 +897,7 @@ list-style-type: square;
     color:black;
     font-weight:700;
     text-align: left;
-    margin-top: 19px;
+    margin-top: 1px;
   }
   .left-side-display-services .left-side-button {
    

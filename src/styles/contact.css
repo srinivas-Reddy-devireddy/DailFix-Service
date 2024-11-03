@@ -95,7 +95,7 @@ font-size: 26px;
    
   }
   .info-box:hover {
-    background-color: green;
+    background-color: whitesmoke;
    }
   
   .info-box h4 {
@@ -120,12 +120,12 @@ font-size: 26px;
   }.info-box p a:hover {
     margin-bottom: 10px;
     font-size: 1em;
-    color: white;
+    color: rgb(3, 177, 251);                                                                                                                                                
   }
   .info-box p:hover {
     margin-bottom: 10px;
     font-size: 1em;
-    color: white;
+    color: rgb(3, 177, 251);
   }
   
   

@@ -25,13 +25,12 @@
   width: 100%;
   background-color: black;
   height: auto;
-  text-align: center;
   display: flex;
   justify-content: space-between;
   text-align: center;
   padding: 6px 60px;
-  
 }
+
 .header-top div{
  display: flex;
  gap: 30px;
@@ -280,11 +279,11 @@ hr{
   top: 100%;
   right:0;
   background: #fff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(76, 75, 75, 0.1);
   border-radius: 5px;
   z-index: 10;
-  width: 230px;
-  padding: 20px;
+  width: 243px;
+  padding: 16px;
   margin-right: -60px;
   margin-top: 10px;
 

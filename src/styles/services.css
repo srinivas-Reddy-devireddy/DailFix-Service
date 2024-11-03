@@ -218,7 +218,19 @@ gap: 20px;
          align-self: center;
          display: flex;
          justify-content: center;
-         } 
+         } .service-fridg-background-image {
+          background-image: url("../assets/Untitled\ design\ \(15\).png");
+          text-align: center;
+           color: black;
+           background-size: cover;
+           background-position: center;
+           height: 360px;
+           text-align: center;
+           align-items: center;
+           align-self: center;
+           display: flex;
+           justify-content: center;
+           } 
   /* geyeser repair css  */
   .service-geyeser-background-image {
     background-image: url("../assets/Untitled\ design\ \(13\).png");
@@ -233,6 +245,20 @@ gap: 20px;
      display: flex;
      justify-content: center;
      } 
+     .service-AirConditioner-background-image{
+      background-image: url('https://www.shutterstock.com/image-photo/air-conditioner-maintenance-male-technician-600nw-2473467597.jpg');
+      text-align: center;
+       color: black;
+       background-size: cover;
+       background-position: center;
+       height: 360px;
+       text-align: center;
+       align-items: center;
+       align-self: center;
+       display: flex;
+       justify-content: center;
+     }
+      
   /* Responsive Design */
   @media (max-width: 768px) {
  
@@ -351,7 +377,11 @@ gap: 20px;
    
      height: 190px;
     
-     } 
-
+     } .service-fridg-background-image {
+      height: 200px;
+       } 
+       .service-AirConditioner-background-image{
+        height: 200px;
+       }
   }
   

@@ -31,17 +31,7 @@ const Footer = () => {
 
 </div>
 
-<div className="contact--info">
-  <h2>Contact Us</h2>
-  <p>Ask For Free Quote on your repair!</p>
- 
-  <p> <FaPhone className='cell-icon-f'/> <a href="tel:9908305008">9908305008</a></p>
-  <p> <FaEnvelope className='email-icon-f' /> <a href="mailto:srinureddy1595@gmail.com">dailfixservice@gmail.com</a></p>
 
-  <p> <FaMapMarkerAlt className='location-icon-f'/>
-      H.No.16-11-404/14, Sbi Colony, Moosaram Bagh, Malakpet, 500036
-    </p>
-  </div>
 
 
 <div className="ourservices-info">
@@ -53,7 +43,17 @@ const Footer = () => {
  <li>Microwave Oven Repair</li></ul>
   </div>
 
+  <div className="contact--info">
+  <h2>Contact Us</h2>
+  <p>Ask For Free Quote on your repair!</p>
+ 
+  <p> <FaPhone className='cell-icon-f'/> <a href="tel:9908305008">9908305008</a></p>
+  <p> <FaEnvelope className='email-icon-f' /> <a href="mailto:srinureddy1595@gmail.com">dailfixservice@gmail.com</a></p>
 
+  <p> <FaMapMarkerAlt className='location-icon-f'/>
+      H.No.16-11-404/14, Sbi Colony, Moosaram Bagh, Malakpet, 500036
+    </p>
+  </div>
 
 <div className="map-container">
  

@@ -165,13 +165,13 @@ const ContactUs = () => {
         <div className="info-box">
           <h4>Phone Number</h4>
           <p> 
-          <FaPhone className='icon-cell'/> <a href="tel:91338700">91338700</a></p>
+          <FaPhone className='icon-cell'/> <a href="tel:9908305008">9908305008</a></p>
         </div>
        
         <div className="info-box">
           <i className="icon-email"></i>
           <h4>Email</h4>
-          <p> <FaEnvelope className='icon-email' /> <a href="mailto:srinureddy1595@gmail.com">srinureddy1595@gmail.com</a></p>
+          <p> <FaEnvelope className='icon-email' /> <a href="mailto:srinureddy1595@gmail.com">dailfixservice@gmail.com</a></p>
         </div>
     </div>
 
