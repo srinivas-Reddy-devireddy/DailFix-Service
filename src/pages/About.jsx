@@ -2,6 +2,8 @@
 import '../styles/about.css';
 import { FaSnowflake, FaTools, FaFan, FaTv, FaWrench } from 'react-icons/fa';  // Import icons from react-icons
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
+
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -73,9 +75,9 @@ const About = () => {
         <h2>Quick Service is Our Top Priority!</h2>
         <p>Our Experienced Repair Technicians are Available 7:00 AM to 11:00 PM Everyday</p>
       </div>
-      <a href="/book-service" className="book-service-button">
+      <Link to='/Home/booking-form' className="book-service-button Link">
         <span role="img" aria-label="phone"> Book Service Now</span>
-      </a>
+      </Link>
     </section>
 
 </div>

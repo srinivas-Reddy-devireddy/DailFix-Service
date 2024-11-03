@@ -106,11 +106,25 @@ color: white;
  
  
 }
+/* form main page  */
+
+.contact-Form-section{
+  padding:30px;
+  width: 100%;
+  margin: auto;
+ background-color: rgb(233, 243, 246);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: -30px;
+  /* margin-bottom: 0px; */
   background-color: white;
   padding: 20px 22px;
   border-radius: 6px;
@@ -146,7 +160,10 @@ input, select {
   cursor: pointer;
   font-size: 1rem;
 }
-
+.book-now-btn:hover {
+  background-color:rgb(57, 162, 57); /* Button color */
+ 
+}
 .terms-text {
   font-size: 0.8rem;
   text-align: center;
@@ -168,6 +185,7 @@ input, select {
 }
 .status{
   color: rgb(59, 54, 54);
+  font-size: 15px;
 }
 /* Base dot style */
 .dot {
@@ -460,18 +478,23 @@ list-style-type: square;
 .book-service-button {
   background-color: #e68739;
   color: white;
-  padding: 0.95rem 1.5rem;
+  padding: 0.50rem 1.1rem !important;
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-size: 16px;
+ 
+}.book-service-button span{
+  color: white;
+  text-decoration: none;
 }
 
 .book-service-button:hover {
   background-color: green;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 

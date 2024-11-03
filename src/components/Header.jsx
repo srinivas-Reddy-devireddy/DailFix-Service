@@ -597,7 +597,7 @@ const Navbar = () => {
             < BsClockHistory  className='icons-header' />Monday - Sunday: 7:00AM - 11:00PM
           </p>
         </div>
-        <button className='top-button'>Quick Booking Service <FaArrowRight className='icons-header'/></button>
+       <Link to='/Home/booking-form' className='Link'><button className='top-button'> Quick Booking Service <FaArrowRight className='icons-header'/></button> </Link> 
       </div>
       <nav className="main-nav">
         {/* 1st logo part */}
@@ -646,7 +646,7 @@ const Navbar = () => {
                   onClick={() => setMenu('services')}
                   className={menu === 'services' ? 'active-link' : ''}
                 >
-                  Services {menu === "services" ? <hr /> : ''}
+                  Services {menu === "services" ? '': ''}
                 </p>
                 {/* Dropdown arrow/close icon */}
                 <span className="dropdown-icon">

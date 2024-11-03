@@ -114,6 +114,7 @@ import { FaPhoneAlt, FaClipboardCheck, FaMapMarkerAlt, FaShieldAlt } from 'react
 import { FaSnowflake, FaTools, FaFan, FaTv, FaWrench } from 'react-icons/fa';  // Import icons from react-icons
 
 import '../styles/home.css';
+import { Link } from 'react-router-dom';
 
 const Home2 = () => {
   const [experience, setExperience] = useState(0);
@@ -238,9 +239,9 @@ const Home2 = () => {
         <h2>Quick Service is Our Top Priority!</h2>
         <p>Our Service Specialists, Available 7:00 AM to 11:00 PM Everyday</p>
       </div>
-      <a href="/book-service" className="book-service-button">
-        <span role="img" aria-label="phone">📞 Book AC Service Now</span>
-      </a>
+     
+      <Link to='/Home/booking-form' className='Link'> <button href="" className="book-service-button"> <span role="img" aria-label="phone">📞 Book Service Now</span> </button> </Link> 
+     
     </section>
 
 

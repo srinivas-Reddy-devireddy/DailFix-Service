@@ -132,7 +132,8 @@ const Form = () => {
     };
 
     return (
-        <div className="form-container">
+       
+ <div className="form-container">
             <form onSubmit={handleSubmit}>
                 <input 
                     type="text" 
@@ -194,11 +195,13 @@ const Form = () => {
                         <h3> Offline</h3>
                         </div>
                        
-                        <p>Our expert is available from 7 AM to 11 PM</p>
+                        <p className="status">Our expert is available from 7 AM to 11 PM</p>
                     </div>
                 )}
             </p>
         </div>
+    
+       
     );
 };
 
