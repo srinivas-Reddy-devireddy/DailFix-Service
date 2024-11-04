@@ -1,4 +1,4 @@
-// components/LoadingSpinner.js
+
 import React from 'react';
 import '../styles/loadpop.css';
 

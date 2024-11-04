@@ -1,28 +1,13 @@
 import React from 'react';
 import '../styles/footer.css'; // Import CSS for styling
-import { FaPhone, FaEnvelope ,FaMapMarkerAlt} from 'react-icons/fa';
+import { FaPhone, FaEnvelope ,FaMapMarkerAlt,FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-  
-
-
-  <footer class="footer">
-
-
-  
- 
-
- <div className="footer-container">
-
-
-
- 
-
-
-
-
+   <footer class="footer">
+<div className="footer-container">
 <div className="ourservices-info">
   <h2>Our Services</h2>
  <ul>
@@ -35,18 +20,38 @@ const Footer = () => {
  </ul>
   </div>
 
-  <div className="contact--info">
-  <h2>Contact Us</h2>
-  <p>Ask For Free Quote on your repair!</p>
  
-  <p> <FaPhone className='cell-icon-f'/> <a href="tel:9908305008">9908305008</a></p>
-  <p> <FaEnvelope className='email-icon-f' /> <a href="mailto:srinureddy1595@gmail.com">dailfixservice@gmail.com</a></p>
+ <div className="contact--info">
+      <h2>Contact Us</h2>
+      <p>Ask For Free Quote on your repair!</p>
 
-  <p> <FaMapMarkerAlt className='location-icon-f'/>
-      H.No.16-11-404/14, Sbi Colony, Moosaram Bagh, Malakpet, 500036
-    </p>
-  </div>
+      <p>
+        <FaPhone className="cell-icon-f" /> <a href="tel:9908305008">9908305008</a>
+      </p>
+      <p>
+        <FaEnvelope className="email-icon-f" /> <a href="mailto:mstechnoservice@gmail.com">mstechnoservice@gmail.com</a>
+      </p>
+      <p>
+        <FaMapMarkerAlt className="location-icon-f" />
+        H.No.16-11-404/14, Sbi Colony, Moosaram Bagh, Malakpet, 500036
+      </p>
 
+      <div className="social-media-icons">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="facebook" aria-label="Facebook">
+          <FaFacebook />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter" aria-label="Twitter">
+          <FaTwitter />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="instagram" aria-label="Instagram">
+          <FaInstagram />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin" aria-label="LinkedIn">
+          <FaLinkedin />
+        </a>
+      </div>
+    </div>
 <div className="map-container">
  
   <iframe
@@ -75,10 +80,8 @@ style={{ border: 0, width: '88%', height: '220px' }}
 </div>
 <div className='full-width'></div>
 
- {/* <p className='copy-right'>&copy; DailFix Services 2024 | All Rights Reserved -SRNDEV</p> */}
  <p className="copy-right">
-  &copy; 2024 DailFix Services. All Rights Reserved ---
-  <a href="tel:9133870617" className="developer"> SRFDEV</a>
+  &copy; 2024 DailFix Services. All Rights Reserved
 </p>
 
 </footer>

@@ -7,7 +7,7 @@
   .background-image {
     background-image: url('https://www.shutterstock.com/image-photo/air-conditioner-maintenance-male-technician-600nw-2473467597.jpg');
    text-align: center;
- color: black;
+   color: black;
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -212,7 +212,7 @@ border-radius: 5px;
     .contact-info-box{
         display: flex;
         flex-direction: column;
-        /* flex-wrap: wrap; */
+     
         justify-content: center;
         align-items: center;
         gap: 16px;
@@ -224,7 +224,7 @@ border-radius: 5px;
       flex: 1;
       background-color: gray;
     margin-top: 10px;
-    padding: 20px;
+    padding: 10px;
       }
     
     
@@ -241,100 +241,3 @@ border-radius: 5px;
 
 
  
-/* Basic Reset */
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #2b3e50;
-    color: #fff;
-  }
-  
-  .contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 30px;
-  }
-  
-  .info-box {
-    background-color: #333;
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  
-  .info-box h4 {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-  }
-  
-  .icon {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-form {
-    background-color: #00bcd4;
-    padding: 30px;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 400px;
-    color: #333;
-    text-align: center;
-  }
-  
-  .contact-form h2 {
-    margin-bottom: 20px;
-    color: #fff;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .contact-form button {
-    background-color: #fff;
-    color: #00bcd4;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  
-  .contact-form button:hover {
-    background-color: #eee;
-  }
-  
-  @media (min-width: 768px) {
-    .contact-container {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 40px;
-    }
-  
-    .contact-info {
-      flex-direction: column;
-      width: 40%;
-    }
-  
-    .contact-form {
-      width: 50%;
-    }
-  }
-   */

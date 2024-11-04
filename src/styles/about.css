@@ -165,57 +165,7 @@
     text-decoration: none;
   }
   
-  /* .ouraboutserices{
-    display: flex;
-    justify-content: space-around;
-  }
-  .about-header h1, .about-header h2 {
-    color: black;
-    text-align: center;
-  }
-  
-  .about-content p, .contact-section p, .about-footer p {
-    line-height: 1.6;
-    color: black;
-  }
-  
-  .service-list, .why-choose-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .service-list li, .why-choose-list li {
-    font-size: 1.1em;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .service-icon {
-    margin-right: 8px;
-    color: #007bff;
-  }
-  
-  .contact-section h3 {
-    font-size: 1.2em;
-    color: #007bff;
-  }
-  
-  .contact-section a {
-    color: #007bff;
-    text-decoration: none;
-  } */
-  
-  /* AOS fade-up animation */
-  /* [data-aos="fade-up"] {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-  }
-  [data-aos="fade-up"].aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-  } */
+ 
   
   /* Responsive Styles */
   @media (max-width: 768px) {

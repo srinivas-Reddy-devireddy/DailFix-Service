@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/services.css';
-import geyserimg from '../../assets/DALL·E 2024-10-28 19.41.22 - A professional, high-definition image of a geyser repair scene. The image features a geyser technician working carefully on a water heater in a modern.webp'
-
+import FAQ from '../../components/FAQ';
+import geyser from '../../assets/greyser.png'
 const GeyserRepair= () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -19,7 +19,7 @@ const GeyserRepair= () => {
     </div>
 <div className='container-row slide-in'>
 <div className='service-img-container'>
-        <img src='https://img.freepik.com/premium-photo/technician-replacing-broken-water-heater-with-new-installation_857340-11579.jpg' alt='Television Repair' />
+<img src={geyser} alt="" />
       </div>
 
       <div className='service-content-section'>
@@ -29,7 +29,7 @@ const GeyserRepair= () => {
 
   <ul>
     <li><span>Same-Day Service:</span> We offer same-day or next-day repairs in Hyderabad, understanding the need for a working geyser, especially in colder months.</li>
-    <li><span>Skilled Technicians:</span> Our certified team is experienced in handling top brands like Bajaj, Crompton, Havells, Racold, and more.</li>
+    <li><span>Skilled Technicians:</span> Our certified team is experienced in handling All brands .</li>
     <li><span>Genuine Spare Parts:</span> We use original parts directly from manufacturers for lasting repairs.</li>
     <li><span>Transparent Pricing:</span> DailFix Service ensures straightforward pricing without hidden charges.</li>
   </ul>
@@ -60,44 +60,10 @@ const GeyserRepair= () => {
     </div>
   </div>
 </div>
-
-
- 
-
-
-
-
 </div>
 {/* FAQ Section */}
-<div className='faq-contact-container'>
-<div className='faq-section'>
-          <h2>Frequently Asked Questions</h2>
-          <h4>1. How soon can you repair my Geyser?</h4>
-          <p>We offer same-day or next-day repair services based on your location and the availability of technicians.</p>
-          
-          <h4>2. Do you provide a warranty on repairs?</h4>
-          <p>Yes, we provide a 3-month warranty on parts and labor for all repairs.</p>
-          
-          <h4>3. How do I book a repair service?</h4>
-          <p>You can contact us through our website or call our customer support to schedule a convenient repair appointment.</p>
-        </div>
 
-        <div className='service-contact'>
-          <h2>Contact Us</h2>
-          <div className='call-book'>
-          <button>  <a 
-    href="tel:+19908305008" 
-    className="call-link"
-  >
-    📞 Call Now
-  </a></button>
-      <button>Book Appointment</button>
-          </div>
-       
-        </div>
-
-</div>
-    
+    <FAQ/>
  
   </div>
   );

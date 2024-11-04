@@ -1,16 +1,13 @@
-// import React from 'react';
+
 import '../styles/about.css';
 import { FaSnowflake, FaTools, FaFan, FaTv, FaWrench } from 'react-icons/fa';  // Import icons from react-icons
-import Footer from './Footer';
+
 import { Link } from 'react-router-dom';
 
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+
 
 const About = () => {
-//   useEffect(() => {
-//     AOS.init({ duration: 1200 });
-//   }, []);
+
 
   return (
     <section className="about-section">
@@ -25,7 +22,7 @@ const About = () => {
         <p className='life-text'>          
         Life's demands are nonstop, and your appliances should be, too. At DialFix Service, we provide swift, reliable repairs to keep your home running smoothly, anytime you need. Just dial us—hassle-free solutions await!
       </p>
-      {/* <div className="about-content"> */}
+    
      
        
 
@@ -40,6 +37,8 @@ const About = () => {
           <li><FaFan className="service-icon" /> Microwave Repair Services</li>
           <li><FaTv className="service-icon" /> AC Repair And Services</li>
           <li><FaWrench className="service-icon" /> Geyser Repair Services</li>
+          <li><FaTv className="service-icon" /> Television Repair Services</li>
+
         </ul>
 </div>
        
@@ -68,7 +67,7 @@ const About = () => {
         <div className="contact-section" data-aos="fade-up">
           <button>📞 Dial: <a href="tel:+9908305008">9908305008</a></button>
         </div>
-      {/* </div> */}
+     
 
       <section className="quick-service-section-about">
       <div className="quick-service-content">

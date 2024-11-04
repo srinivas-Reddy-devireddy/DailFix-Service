@@ -1,118 +1,13 @@
-// import React, { useState, useEffect } from 'react';
-// import { FaToolbox } from 'react-icons/fa';
-// import '../styles/home.css';
-// import SliderContent from '../components/SliderContent';
-
-// const Home2 = () => {
-//   const [experience, setExperience] = useState(0);
-//   const [satisfaction, setSatisfaction] = useState(0);
-
-//   // Count-up animation for Experience (9+)
-//   useEffect(() => {
-//     const targetExperience = 9;
-//     if (experience < targetExperience) {
-//       const interval = setInterval(() => {
-//         setExperience((prev) => {
-//           if (prev < targetExperience) {
-//             return prev + 1;
-//           }
-//           clearInterval(interval);
-//           return targetExperience;
-//         });
-//       }, 650); // Adjust speed by changing the interval time
-//     }
-//   }, [experience]);
-
-//   // Count-up animation for Customer Satisfaction (100%)
-//   useEffect(() => {
-//     const targetSatisfaction = 100;
-//     if (satisfaction < targetSatisfaction) {
-//       const interval = setInterval(() => {
-//         setSatisfaction((prev) => {
-//           if (prev < targetSatisfaction) {
-//             return prev + 1;
-//           }
-//           clearInterval(interval);
-//           return targetSatisfaction;
-//         });
-//       }, 650); // Faster speed for a smoother transition to 100%
-//     }
-//   }, [satisfaction]);
-
-//   return (
-//     <div className="home2-container">
-
-//       <section className="hero-section">
-//         <div className="hero-content">
-//           <h1>Quick AC Service/Repair <span>Across Hyderabad</span></h1>
-//           <p>
-//             Hyderabad AIRCON is a professional home appliance repair company. Since 2012, it has been our belief that our customers deserve top quality service and repairs at a fair price.
-//           </p>
-//           <p className="mission">
-//             Our mission is to serve our customers with quality service and a guarantee on all work undertaken.
-//           </p>
-//           <div className="stats">
-//             <div className="stat">
-//               <FaToolbox className="icon" />
-//               <h2>{experience}+</h2>
-//               <p>Years Experience</p>
-//             </div>
-//             <div className="stat">
-//               <FaToolbox className="icon" />
-//               <h2>{satisfaction}%</h2>
-//               <p>Customer Satisfaction</p>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="hero-image">
-//           {/* <img src="https://via.placeholder.com/500" alt="AC Repair" /> */}
-//          <SliderContent/>
-//         </div>
-//       </section>
-
-//       {/* Services Section */}
-//       <section className="services-section">
-//         <h2>Choosing the Right Home Appliances Repair and Service Company</h2>
-//         <div className="services-container">
-//           <div className="service-list">
-//             <h3>Need an AC Service and Repair Technician for:</h3>
-//             <ul>
-//               <li>Split AC Service</li>
-//               <li>AC Repair</li>
-//               <li>Window AC Gas Filling</li>
-//               <li>Window AC Service</li>
-//               <li>Split AC Gas Filling</li>
-//               <li>Split Install Service</li>
-//             </ul>
-//           </div>
-//           <div className="why-choose">
-//             <h3>Why Choose Hyderabad Aircon for AC Repair Service in Hyderabad?</h3>
-//             <ul>
-//               <li>Qualified AC Technicians</li>
-//               <li>In-house AC Technicians with 9+ years of experience</li>
-//               <li>High-Quality AC Repairing</li>
-//               <li>Genuine AC Spares, 90-day post-service warranty</li>
-//               <li>High-skilled AC Service Expertise</li>
-//               <li>Trusted by 2250 Customers Every Year</li>
-//               <li>One Visit Repair Fix Guaranteed</li>
-//             </ul>
-//           </div>
-//         </div>
-//       </section>
-
-//     </div>
-//   );
-// };
-
-// export default Home2;
-
-
 
 import React, { useState, useEffect } from 'react';
 import { FaToolbox } from 'react-icons/fa';
 import { FaPhoneAlt, FaClipboardCheck, FaMapMarkerAlt, FaShieldAlt } from 'react-icons/fa';
 import { FaSnowflake, FaTools, FaFan, FaTv, FaWrench } from 'react-icons/fa';  // Import icons from react-icons
-
+import imge1 from '../assets/refrigerator_machine_technician_1.jpg'
+import imge2 from '../assets/washingmachine3.jpg'
+import imge3 from '../assets/washing_machine_technician1.jpg'
+import imge4 from '../assets/washing_machine_technician_4.jpg'
+import imge5 from '../assets/washing_machine_2.jpg'
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
 
@@ -122,16 +17,12 @@ const Home2 = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlUAaftsQk0LirOWpndc7n583LfZhDF0IxGQ&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfOcQ-CVmbduAtW7khutM0N1rPyM5iet3pFg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMmT22652wJ2V5WxbZQZDJ8oGchvJ3a18J1w&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-5njQABY3enM2-H1XpZbkvTlOjtbSSmociA&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ILoK9wa5Wi-i6lya3EtKFiGlo7rgsrjSng&s",
-  ];
+    imge1,imge2,imge3,imge4,imge5
+      ];
 
   // Count-up animation for Experience (9+)
   useEffect(() => {
-    const targetExperience = 9;
+    const targetExperience = 13;
     if (experience < targetExperience) {
       const interval = setInterval(() => {
         setExperience((prev) => {
@@ -213,25 +104,25 @@ const Home2 = () => {
           <li><FaSnowflake className="service-icon" /> Refrigerator Repairs</li>
           <li><FaTools className="service-icon" /> Washing Machine Services</li>
           <li><FaFan className="service-icon" /> Microwave Repair Services</li>
-          <li><FaTv className="service-icon" /> AC Repair And Services</li>
+          <li><FaTv className="service-icon" /> AC Repair Services</li>
           <li><FaWrench className="service-icon" /> Geyser Repair Services</li>
-          <li><FaTv className="service-icon" /> Television Repair</li>
+          <li><FaTv className="service-icon" /> Television Repair Services</li>
         </ul>
           </div>
           <div className="why-choose">
             <h3>Why Choose Hyderabad DailFix Service for  Repair Service in Hyderabad?</h3>
             <ul>
               <li>Qualified Technicians</li>
-              <li>In-house Technicians with 8+ years of experience</li>
+              <li>In-house Technicians with 10+ years of experience</li>
               <li>High-Quality Repairing</li>
              <li>High-skilled Service Expertise</li>
-              <li>Trusted by 3050 Customers Every Year</li>
+              <li>Trusted by 5000 Customers Every Year</li>
               <li>One Visit Repair Fix Guaranteed</li>
             </ul>
           </div>
         </div>
       </section>
-
+      
 
       {/* quick-service-section */}
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../../styles/services.css';
-// import washingimg from '../../assets/DALL·E 2024-10-26 14.34.18 - HD image of a washing machine repair scene with a black background, showing tools like wrenches and screwdrivers. The washing machine has an open pane.webp'
+import FAQ from '../../components/FAQ';
+import fridg from '../../assets/refrigerator.png'
 const FridgeRepair = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -18,7 +19,7 @@ const FridgeRepair = () => {
     </div>
 <div className='container-row slide-in'>
 <div className='service-img-container'>
-        <img src='https://img.freepik.com/premium-photo/refrigerator-with-malfunctioning-ice-maker-being-repaired_1283887-12120.jpg?semt=ais_hybrid' alt='Microwave Repair' />
+        <img src={fridg} alt='' />
       </div>
 
       <div className='service-content-section'>
@@ -28,7 +29,7 @@ const FridgeRepair = () => {
 
   <ul>
     <li><span>Same-Day Service:</span> We strive to provide same-day or next-day repairs in Hyderabad, understanding the necessity of a functioning refrigerator.</li>
-    <li><span>Skilled Technicians:</span> Our certified team is experienced in handling brands like LG, Samsung, Whirlpool, Godrej, Haier, and more.</li>
+    <li><span>Skilled Technicians:</span> Our certified team is experienced in handling All brands </li>
     <li><span>Genuine Spare Parts:</span> We use original manufacturer parts to ensure durable repairs.</li>
     <li><span>Transparent Pricing:</span> DailFix Service offers clear pricing without hidden charges.</li>
   </ul>
@@ -60,41 +61,10 @@ const FridgeRepair = () => {
   </div>
 </div>
 
-
-
-
-
 </div>
 {/* FAQ Section */}
-<div className='faq-contact-container'>
-<div className='faq-section'>
-          <h2>Frequently Asked Questions</h2>
-          <h4>1. How soon can you repair my Microwave?</h4>
-          <p>We offer same-day or next-day repair services based on your location and the availability of technicians.</p>
-          
-          <h4>2. Do you provide a warranty on repairs?</h4>
-          <p>Yes, we provide a 3-month warranty on parts and labor for all repairs.</p>
-          
-          <h4>3. How do I book a repair service?</h4>
-          <p>You can contact us through our website or call our customer support to schedule a convenient repair appointment.</p>
-        </div>
 
-        <div className='service-contact'>
-          <h2>Contact Us</h2>
-          <div className='call-book'>
-          <button>  <a 
-    href="tel:+19908305008" 
-    className="call-link"
-  >
-    📞 Call Now
-  </a></button>
-      <button>Book Appointment</button>
-          </div>
-       
-        </div>
-
-</div>
-    
+    <FAQ/>
  
   </div>
   );

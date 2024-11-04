@@ -82,21 +82,48 @@
 }
 .left-side-display-services .left-side-button {
   background-color:orange !important;
-  padding: 15px 40px !important;
+  padding: 10px 20px !important;
   color: white !important;
-  font-size: 16px !important;
+  font-size: 13px !important;
   font-weight: bold !important;
   border: 1px solid orange !important;
   border-radius: 4px;
+    animation: heartbeat 1.5s ease-in-out infinite;
+  transition: transform 0.2s;
+  height: 40px;
+  width: 130px;
+
 }
 .left-side-button a{
 text-decoration: none;
 color: white;
 }
 .left-side-display-services .left-side-button:hover {
-  background-color: green !important;
-  border: 1px solid green !important;
+  background-color: rgb(120, 104, 2) !important;
+  border: 1px solid rgb(242, 240, 163) !important;
+  animation: heartbeat 3s ease-in-out infinite;
+
 }
+
+/* Heartbeat animation for phone container */
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.5);
+  }
+  14% {
+    transform: scale(0.6);
+  }
+  28% {
+    transform: scale(0.6);
+  }
+  42% {
+    transform: scale(0.5);
+  }
+  90% {
+    transform: scale(0.6);
+  }
+}
+
 
 
 /* right side  */
@@ -109,7 +136,7 @@ color: white;
 /* form main page  */
 
 .contact-Form-section{
-  padding:30px;
+  padding:10px;
   width: 100%;
   margin: auto;
  background-color: rgb(233, 243, 246);
@@ -117,7 +144,7 @@ color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
 }
 
 .form-container {
@@ -258,7 +285,7 @@ input, select {
 .call-text{
   color:ghostwhite;
   font-size: 30px !important;
-  font-weight:900;
+  font-weight:700;
 }
 .phone-number{
   color: rgb(68, 64, 64);
@@ -267,11 +294,14 @@ input, select {
 }
 
 .phone-number a{
-  color: ghostwhite;
+  color: gainsboro;
   font-size: 23px !important;
-  font-weight: 800;
+  font-weight: 700;
   text-decoration: none;
+}.phone-number a:hover{
+color: rgb(29, 29, 145);
 }
+
 
 
 .features {
@@ -915,7 +945,7 @@ list-style-type: square;
     text-align: left;
   }
   .left-contnat-2 {
-    font-size: 1.1rem; /* Increase font size for main text */
+    font-size: 1rem; /* Increase font size for main text */
     line-height: 1.2;
     color:black;
     font-weight:700;
@@ -1067,12 +1097,12 @@ list-style-type: square;
   
   
   .call-text{
-    color:rgb(229, 244, 236);
+    color:lightgoldenrodyellow;
     font-size: 25px !important;
     font-weight: 700;
   }
   .phone-number a{
-    color:rgb(222, 242, 232);
+    color:gainsboro;
     font-size: 24px !important;
     font-weight: bold;
   }

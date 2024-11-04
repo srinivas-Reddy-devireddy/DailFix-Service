@@ -102,6 +102,38 @@ color: white; cursor: pointer;
   text-decoration: none;
   color: rgb(81, 70, 70); /* Optional styling for "SRNDEV" */
 }
+
+
+.contact--info .social-media-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.contact--info .social-media-icons a {
+  font-size: 1.8em;
+  transition: transform 0.3s ease;
+}
+
+.contact--info .social-media-icons a:hover {
+  transform: scale(1.1);
+}
+
+.contact--info .social-media-icons .facebook {
+  color: #1877F2; /* Facebook blue */
+}
+
+.contact--info .social-media-icons .twitter {
+  color: #1DA1F2; /* Twitter blue */
+}
+
+.contact--info .social-media-icons .instagram {
+  color: #C13584; /* Instagram gradient start */
+}
+
+.contact--info .social-media-icons .linkedin {
+  color: #0077B5; /* LinkedIn blue */
+}
 @media (max-width: 768px) {
 
   .footer-container{
@@ -114,4 +146,3 @@ color: white; cursor: pointer;
     
   }
 }
-
