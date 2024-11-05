@@ -30,7 +30,7 @@ const Navbar = () => {
             < BsClockHistory  className='icons-header' />Monday - Sunday: 7:00AM - 11:00PM
           </p>
         </div>
-       <Link to='/Home/booking-form' className='Link'><button className='top-button'> Quick Booking Service <FaArrowRight className='icons-header'/></button> </Link> 
+       <Link to='/Home/booking-form/' className='Link'><button className='top-button'> Quick Booking Service <FaArrowRight className='icons-header'/></button> </Link> 
       </div>
       <nav className="main-nav">
         {/* 1st logo part */}
@@ -90,22 +90,22 @@ const Navbar = () => {
                 {showServicesDropdown && (
                   <ul className="dropdown-menu">
                     <li onClick={() => handleLinkClick('washing')}>
-                      <Link to="/service/Washing-Machine" className='Link'>Washing Machine Repair</Link>
+                      <Link to="/service/Washing-Machine/" className='Link'>Washing Machine Repair</Link>
                     </li>
                     <li onClick={() => handleLinkClick('refrigerator')}>
-                      <Link to="/service/Refrigerator" className='Link'>Refrigerator Repair</Link>
+                      <Link to="/service/Refrigerator/" className='Link'>Refrigerator Repair</Link>
                     </li>
                     <li onClick={() => handleLinkClick('ac')}>
-                      <Link to="/service/AirConditioner" className='Link'>AirConditioner Repair </Link>
+                      <Link to="/service/AirConditioner/" className='Link'>AirConditioner Repair </Link>
                     </li>
                     <li onClick={() => handleLinkClick('tv')}>
-                      <Link to="/service/Television" className='Link'>Television Repair</Link>
+                      <Link to="/service/Television/" className='Link'>Television Repair</Link>
                     </li>
                     <li onClick={() => handleLinkClick('geyser')}>
-                      <Link to="/service/Geyser" className='Link'>Geyser Repair</Link>
+                      <Link to="/service/Geyser/" className='Link'>Geyser Repair</Link>
                     </li>
                     <li onClick={() => handleLinkClick('microwave')}>
-                      <Link to="/service/Microwave" className='Link'>Microwave Repair</Link>
+                      <Link to="/service/Microwave/" className='Link'>Microwave Repair</Link>
                     </li>
                   
                   </ul>

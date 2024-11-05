@@ -66,14 +66,36 @@
 
 .icon-button.call {
   background-color: #007bff; /* Blue for Call */
-}
+  animation: heartbeat 3s ease-in-out infinite;
+animation: heartbeat 1.5s ease-in-out infinite;
+transition: transform 0.2s;
 
+
+
+}
+/* Heartbeat animation for phone container */
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.5);
+  }
+  14% {
+    transform: scale(0.6);
+  }
+  28% {
+    transform: scale(0.6);
+  }
+  42% {
+    transform: scale(0.5);
+  }
+  90% {
+    transform: scale(0.6);
+  }
+}
 .icon-button.whatsapp {
   background-color: #25D366; /* WhatsApp Green */
 }
 
 .icon-button:hover {
   transform: scale(1.1);
-  width: 53px;
-  height: 53px;
+ 
 }

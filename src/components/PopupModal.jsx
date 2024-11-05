@@ -19,10 +19,12 @@ function PopupModal({ closeModal }) {
         <div style={{ display: "flex", flexDirection: 'column', justifyContent: "center", alignItems: "center" }}>
          
           <p className='service-pop'>Washing Machines | Fridges | Microwaves | Geyser | Freezer
-          Expert Technicians | 24/7 Service | Book Now</p>
+         </p>
+         <h4> Expert Technicians | 24/7 Service | Book Now</h4>
           <a href="tel:+9908305008" className="call-button">
             Call Us Now
           </a>
+          <button className="call-button" onClick={closeModal}>Start Now</button>
              </div>
       </div>
     </div>

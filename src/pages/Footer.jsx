@@ -11,12 +11,12 @@ const Footer = () => {
 <div className="ourservices-info">
   <h2>Our Services</h2>
  <ul>
-  <li> <Link to='/service/Washing-Machine' className='Link' style={{color:"white"}}> Washing Machine Repair</Link></li>
- <li> <Link to='/service/AirConditioner' className='Link' style={{color:"white"}}> AC Repair Service </Link></li>
- <li> <Link to='/service/Refrigerator' className='Link' style={{color:"white"}}>Refrigerator Repair </Link></li>
- <li> <Link to='/service/Geyser' className='Link' style={{color:"white"}}>Geyser Repair </Link></li>
- <li> <Link to='/service/Television' className='Link' style={{color:"white"}}>TV Repair  Service </Link></li>
- <li> <Link to='/service/Microwave' className='Link' style={{color:"white"}}>Microwave Oven Repair </Link></li>
+  <li> <Link to='/service/Washing-Machine/' className='Link' style={{color:"white"}}> Washing Machine Repair</Link></li>
+ <li> <Link to='/service/AirConditioner/' className='Link' style={{color:"white"}}> AC Repair Service </Link></li>
+ <li> <Link to='/service/Refrigerator/' className='Link' style={{color:"white"}}>Refrigerator Repair </Link></li>
+ <li> <Link to='/service/Geyser/' className='Link' style={{color:"white"}}>Geyser Repair </Link></li>
+ <li> <Link to='/service/Television/' className='Link' style={{color:"white"}}>TV Repair  Service </Link></li>
+ <li> <Link to='/service/Microwave/' className='Link' style={{color:"white"}}>Microwave Oven Repair </Link></li>
  </ul>
   </div>
 

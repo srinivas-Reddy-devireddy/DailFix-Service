@@ -132,7 +132,7 @@ const Home2 = () => {
         <p>Our Service Specialists, Available 7:00 AM to 11:00 PM Everyday</p>
       </div>
      
-      <Link to='/Home/booking-form' className='Link'> <button href="" className="book-service-button"> <span role="img" aria-label="phone">📞 Book Service Now</span> </button> </Link> 
+      <Link to='/Home/booking-form/' className='Link'> <button href="" className="book-service-button"> <span role="img" aria-label="phone">📞 Book Service Now</span> </button> </Link> 
      
     </section>
 

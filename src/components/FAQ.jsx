@@ -27,7 +27,7 @@ const FAQ = () => {
   >
     📞 Call Now
   </a></button>
-          <Link to='/Home/booking-form' className='Link'>  <button>Book Service Now</button></Link>                
+          <Link to='/Home/booking-form/' className='Link'>  <button>Book Service Now</button></Link>                
           </div>
        
         </div>

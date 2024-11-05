@@ -82,16 +82,14 @@
 }
 .left-side-display-services .left-side-button {
   background-color:orange !important;
-  padding: 10px 20px !important;
+  padding: 16px 36px !important;
   color: white !important;
-  font-size: 13px !important;
+  font-size: 16px !important;
   font-weight: bold !important;
   border: 1px solid orange !important;
   border-radius: 4px;
-    animation: heartbeat 1.5s ease-in-out infinite;
-  transition: transform 0.2s;
-  height: 40px;
-  width: 130px;
+   
+ 
 
 }
 .left-side-button a{
@@ -99,29 +97,10 @@ text-decoration: none;
 color: white;
 }
 .left-side-display-services .left-side-button:hover {
-  background-color: rgb(120, 104, 2) !important;
-  border: 1px solid rgb(242, 240, 163) !important;
-  animation: heartbeat 3s ease-in-out infinite;
+  background-color: green !important;
+  border: 1px solid green !important;
+ 
 
-}
-
-/* Heartbeat animation for phone container */
-@keyframes heartbeat {
-  0% {
-    transform: scale(0.5);
-  }
-  14% {
-    transform: scale(0.6);
-  }
-  28% {
-    transform: scale(0.6);
-  }
-  42% {
-    transform: scale(0.5);
-  }
-  90% {
-    transform: scale(0.6);
-  }
 }
 
 
