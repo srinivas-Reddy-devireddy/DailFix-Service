@@ -165,127 +165,33 @@ const Form = () => {
         setFormData({ ...formData, [name]: value });
     };
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-    //     const { name, mobile, address, serviceType } = formData;
-    //     const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}`;
+        const { name, mobile, address, serviceType } = formData;
+        const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}`;
         
-    //     // Encode the message for URL
-    //     const whatsappMessage = encodeURIComponent(message);
+        // Encode the message for URL
+        const whatsappMessage = encodeURIComponent(message);
         
-    //     // WhatsApp API URL
-    //     const whatsappUrl = `https://wa.me/919133870617?text=${whatsappMessage}`;
+        // WhatsApp API URL
+        const whatsappUrl = `https://wa.me/919908305008?text=${whatsappMessage}`;
 
-    //     // Show alert
-    //     alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
+        // Show alert
+        alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
         
-    //     // Open the WhatsApp link in a new tab
-    //     window.open(whatsappUrl, '_blank');
+        // Open the WhatsApp link in a new tab
+        window.open(whatsappUrl, '_blank');
 
-    //     // Reset the form
-    //     setFormData({
-    //         name: '',
-    //         mobile: '',
-    //         address: '',
-    //         serviceType: ''
-    //     });
-    // };
-// const handleSubmit = (e) => {
-//     e.preventDefault();
+        // Reset the form
+        setFormData({
+            name: '',
+            mobile: '',
+            address: '',
+            serviceType: ''
+        });
+    };
 
-//     const { name, mobile, address, serviceType } = formData;
-//     const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}`;
-    
-//     // Encode the message for URL
-//     const whatsappMessage = encodeURIComponent(message);
-    
-//     // WhatsApp URL to submit service request
-//     const whatsappUrl = `https://wa.me/919133870617?text=${whatsappMessage}`;
-    
-//     // Default confirmation message for user
-//     const userConfirmationMessage = encodeURIComponent("Your application data is received. We will get back to you shortly.");
-    
-//     // URL to send confirmation message to user's WhatsApp
-//     const userWhatsappUrl = `https://wa.me/${formData.mobile}?text=${userConfirmationMessage}`;
-
-//     // Alert user before navigating
-//     alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
-    
-//     // Open WhatsApp links
-//     window.open(whatsappUrl, '_blank'); // To send request to service
-//     window.open(userWhatsappUrl, '_blank'); // To confirm to user
-
-//     // Reset form fields
-//     setFormData({
-//         name: '',
-//         mobile: '',
-//         address: '',
-//         serviceType: ''
-//     });
-// };     
-// const handleSubmit = (e) => {
-//     e.preventDefault();
-
-//     const { name, mobile, address, serviceType } = formData;
-    
-//     // Combined message for both the service request and confirmation to the user
-//     const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}\n\nYour application data is received. We will get back to you shortly.`;
-    
-//     // Encode the message for URL
-//     const whatsappMessage = encodeURIComponent(message);
-    
-//     // WhatsApp API URL for a single message
-//     const whatsappUrl = `https://wa.me/919133870617?text=${whatsappMessage}`;
-
-//     // Show alert
-//     alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
-    
-//     // Open the WhatsApp link in a new tab
-//     window.open(whatsappUrl, '_blank');
-
-//     // Reset the form
-//     setFormData({
-//         name: '',
-//         mobile: '',
-//         address: '',
-//         serviceType: ''
-//     });
-// };
-// const handleSubmit = (e) => {
-//     e.preventDefault();
-
-//     const { name, mobile, address, serviceType } = formData;
-
-//     // Construct the message
-//     const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}\n\nYour application data is received. We will get back to you shortly.`;
-
-//     // Encode the message for URL
-//     const whatsappMessage = encodeURIComponent(message);
-
-//     // WhatsApp API URLs for both sender (your number) and receiver (user's number)
-//     const senderWhatsappUrl = `https://wa.me/919133870617?text=${whatsappMessage}`; // Replace with your own WhatsApp number
-//     const receiverWhatsappUrl = `https://wa.me/${mobile}?text=${whatsappMessage}`; // Send to the user's WhatsApp number
-
-//     // Show alert for submission confirmation
-//     alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
-
-//     // Open WhatsApp link for sender (your number)
-//     window.open(senderWhatsappUrl, '_blank');
-
-//     // Open WhatsApp link for receiver (user's number) after a short delay
-//     setTimeout(() => {
-//         window.open(receiverWhatsappUrl, '_blank');
-//     }, 1000); // Delay to avoid opening both links at the same time
-
-//     // Reset the form
-//     setFormData({
-//         name: '',
-//         mobile: '',
-//         address: '',
-//         serviceType: ''
-//     });
-// };
 // const handleSubmit = (e) => {
 //     e.preventDefault();
 
@@ -298,19 +204,21 @@ const Form = () => {
 //     const whatsappMessage = encodeURIComponent(message);
     
 //     // WhatsApp API URL for the receiver (replace with the actual receiver number)
-//     const receiverWhatsAppUrl = `https://wa.me/919133870617?text=${whatsappMessage}`;
+//     const receiverWhatsAppUrl = `https://wa.me/916304490698?text=${whatsappMessage}`;
     
 //     // WhatsApp API URL for the sender
 //     const senderWhatsAppUrl = `https://wa.me/${mobile}?text=${whatsappMessage}`;
 
 //     // Show alert
-//     alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
-    
-//     // Open the WhatsApp link for the receiver in a new tab
-//     window.open(receiverWhatsAppUrl, '_blank');
-    
-//     // Open the WhatsApp link for the sender in a new tab
-//     window.open(senderWhatsAppUrl, '_blank');
+//     alert("Submission completed successfully. Redirecting to WhatsApp...");
+
+//     // Navigate to the receiver's WhatsApp chat
+//     window.location.href = receiverWhatsAppUrl;
+
+//     // After a short delay, navigate to the sender's WhatsApp chat
+//     setTimeout(() => {
+//         window.location.href = senderWhatsAppUrl;
+//     }, 5000); // Adjust the delay as needed
 
 //     // Reset the form
 //     setFormData({
@@ -319,43 +227,51 @@ const Form = () => {
 //         address: '',
 //         serviceType: ''
 //     });
+// }; 
+
+// const handleSubmit = async (e) => {
+//     e.preventDefault();
+
+//     const { name, mobile, address, serviceType } = formData;
+
+//     try {
+//         const response = await fetch('http://localhost:5000/add-customer-data', {
+//             method: 'POST',
+//             headers: { 'Content-Type': 'application/json' },
+//             body: JSON.stringify({ name, mobile, address, serviceType })
+//         });
+
+//         if (response.ok) {
+//             alert("Submission completed successfully. Redirecting to WhatsApp...");
+
+//             // WhatsApp messaging
+//             const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}\n\nYour application data is received. We will get back to you shortly.`;
+//             const whatsappMessage = encodeURIComponent(message);
+//             const receiverWhatsAppUrl = `https://wa.me/919908305008?text=${whatsappMessage}`;
+//             const senderWhatsAppUrl = `https://wa.me/${mobile}?text=${whatsappMessage}`;
+
+//             // Redirect to WhatsApp
+//             window.location.href = receiverWhatsAppUrl;
+//             setTimeout(() => {
+//                 window.location.href = senderWhatsAppUrl;
+//             }, 5000);
+
+//             // Reset form
+//             setFormData({
+//                 name: '',
+//                 mobile: '',
+//                 address: '',
+//                 serviceType: ''
+//             });
+//         } else {
+//             alert("Failed to submit. Please try again.");
+//         }
+//     } catch (error) {
+//         console.error("Error submitting the form:", error);
+//         alert("An error occurred. Please try again.");
+//     }
 // };
-const handleSubmit = (e) => {
-    e.preventDefault();
 
-    const { name, mobile, address, serviceType } = formData;
-    
-    // Combined message for both the service request and confirmation to the user
-    const message = `New Service Request:\nName: ${name}\nMobile: ${mobile}\nAddress: ${address}\nService Type: ${serviceType}\n\nYour application data is received. We will get back to you shortly.`;
-    
-    // Encode the message for URL
-    const whatsappMessage = encodeURIComponent(message);
-    
-    // WhatsApp API URL for the receiver (replace with the actual receiver number)
-    const receiverWhatsAppUrl = `https://wa.me/916304490698?text=${whatsappMessage}`;
-    
-    // WhatsApp API URL for the sender
-    const senderWhatsAppUrl = `https://wa.me/${mobile}?text=${whatsappMessage}`;
-
-    // Show alert
-    alert("Submission completed successfully. Redirecting to WhatsApp...");
-
-    // Navigate to the receiver's WhatsApp chat
-    window.location.href = receiverWhatsAppUrl;
-
-    // After a short delay, navigate to the sender's WhatsApp chat
-    setTimeout(() => {
-        window.location.href = senderWhatsAppUrl;
-    }, 5000); // Adjust the delay as needed
-
-    // Reset the form
-    setFormData({
-        name: '',
-        mobile: '',
-        address: '',
-        serviceType: ''
-    });
-};
 
     return (
        
@@ -434,6 +350,7 @@ const handleSubmit = (e) => {
 };
 
 export default Form;
+
 
 
 

@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import '../styles/loadpop.css';
+import { FaCheck } from 'react-icons/fa';
 
 function PopupModal({ closeModal }) {
   useEffect(() => {
@@ -21,6 +22,13 @@ function PopupModal({ closeModal }) {
           <p className='service-pop'>Washing Machines | Fridges | Microwaves | Geyser | Freezer
          </p>
          <h4> Expert Technicians | 24/7 Service | Book Now</h4>
+         <ul className="why-choose-us">
+      <h4>Why Choose Us</h4>
+      <li><FaCheck className="icon" /> Prompt Service</li>
+      <li><FaCheck className="icon" /> Skilled Technicians</li>
+      <li><FaCheck className="icon" /> Transparent Pricing</li>
+      <li><FaCheck className="icon" /> Customer Satisfaction</li>
+    </ul>
           <a href="tel:+9908305008" className="call-button">
             Call Us Now
           </a>

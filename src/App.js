@@ -808,7 +808,7 @@ function App() {
               <Route path="/service/AirConditioner/" element={<AirConditioner />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/Home/booking-form/" element={<ContactForm />} />
-              {/* <Route path="/d" element={<SubmittedData />} /> */}
+              <Route path="/d" element={<SubmittedData />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
