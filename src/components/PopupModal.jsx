@@ -29,7 +29,7 @@ function PopupModal({ closeModal }) {
       <li><FaCheck className="icon" /> Transparent Pricing</li>
       <li><FaCheck className="icon" /> Customer Satisfaction</li>
     </ul>
-          <a href="tel:+9908305008" className="call-button">
+          <a href="tel:+9908305008" className="call-button green">
             Call Us Now
           </a>
           <button className="call-button" onClick={closeModal}>Start Now</button>
