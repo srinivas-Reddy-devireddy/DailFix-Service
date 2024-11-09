@@ -4,8 +4,8 @@
     margin: auto;
   }
   
-  .background-image {
-    background-image: url('https://www.shutterstock.com/image-photo/air-conditioner-maintenance-male-technician-600nw-2473467597.jpg');
+  .background-image-about {
+    background-image: url('../assets/aboutimg.png');
    text-align: center;
  color: black;
   background-size: cover;
@@ -57,8 +57,7 @@
 .ouraboutservice{
     display: flex;
     justify-content: space-around;
-  
-    background-color: rgb(246, 240, 240);
+     background-color: rgb(246, 240, 240);
     padding:30px;
     margin: 20px 30px;
   }
@@ -174,7 +173,7 @@
         
       }
       
-      .background-image {
+      .background-image-about {
        height: 200px;
       }
     

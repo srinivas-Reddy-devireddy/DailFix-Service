@@ -1,10 +1,8 @@
 /* home.css */
 .home-container {
   position: relative;
-  background-image: url('../assets/Untitled\ design\ \(2\).png');
-  /* background-image: url('../assets/DALL·E\ 2024-10-28\ 19.41.22\ -\ A\ professional\,\ high-definition\ image\ of\ a\ geyser\ repair\ scene.\ The\ image\ features\ a\ geyser\ technician\ working\ carefully\ on\ a\ water\ heater\ in\ a\ modern.webp'); */
-  /* background-image: url('https://www.capitanappliance.com/wp-content/uploads/2023/01/g9e2BwkAVS6touFGLqCCap7df6DguSwj1673541070.jpg'); */
-  background-size: cover;
+  background-image: url('../assets/homeimg.png');
+   background-size: cover;
   background-position: center;
   min-height: 100vh;
   padding: 16px;
@@ -20,9 +18,6 @@
   text-align: center;
 }
 
-
-
-
 .content-overlay {
  width: 100%;
   padding: 20px ;
@@ -32,10 +27,6 @@
   flex-direction: column;
 
 }
-
-
-
-
 
 .top-container {
   display: flex;
@@ -240,7 +231,7 @@ input, select {
 .circle {
   width:65px;         /* Adjust size as needed */
   height:65px;        /* Adjust size as needed */
- border: 1px solid rgb(90, 86, 79);
+ border: 2px solid rgb(90, 86, 79);
   border-radius: 50%;   /* Makes it a circle */
   display: flex;
   justify-content: center;
@@ -256,15 +247,16 @@ input, select {
   font-weight: 800;
 }
 .tick-mark-bottom-text{
-  color: white;
+  color:ghostwhite;
+  font-weight: 700;
 
 }
 
 
 .call-text{
-  color:ghostwhite;
-  font-size: 30px !important;
-  font-weight:700;
+  color: #0052cc;
+  font-size: 29px !important;
+  font-weight:800;
 }
 .phone-number{
   color: rgb(68, 64, 64);
@@ -416,14 +408,18 @@ color: gray !important;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
+
 }
 
-.service-list, .why-choose {
+.service-list{
+  flex: 1;
+  min-width: 300px;
+}
+.why-choose {
   flex: 1;
   min-width: 300px;
  
 }
-
 .service-list ul, .why-choose ul {
 
 list-style-type: square;
@@ -431,8 +427,7 @@ list-style-type: square;
   padding-left: 20px;
  
 }
-.service-list ul, .why-choose ul li{
- 
+.service-list ul li, .why-choose ul li{
  margin-top: 10px;
  font-size: 17px !important;
  color: #2a2a2a;
@@ -530,12 +525,11 @@ list-style-type: square;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 30px;
 }
 
 .feature-step {
-  flex: 1 1 200px; /* Responsive sizing */
-  max-width: 250px;
+ max-width: 250px;
   padding: 1rem;
   text-align: center;
 }
@@ -839,7 +833,7 @@ list-style-type: square;
 /* Responsive Styles */
 @media (max-width: 768px) {
   .home-container {
-   background-image: url('../assets/DALL·E\ 2024-10-31\ 17.23.05\ -\ A\ realistic\ scene\ of\ a\ washing\ machine\ repair\ in\ a\ home\ setting.\ A\ technician\ wearing\ a\ work\ uniform\ and\ gloves\ is\ fixing\ a\ front-loading\ washing\ mach.webp');
+background-image: url('../assets//mobilehomeimg.png');
     /* background-image: url('../assets/DALL·E\ 2024-10-29\ 20.40.02\ -\ An\ image\ of\ a\ technician\ repairing\ a\ washing\ machine.\ The\ technician\ is\ kneeling\ beside\ an\ open\ washing\ machine\,\ holding\ tools\,\ and\ inspecting\ its\ inn.webp') */
   }
   .display-services {
@@ -1076,9 +1070,9 @@ list-style-type: square;
   
   
   .call-text{
-    color:lightgoldenrodyellow;
+    color:#0099cc;
     font-size: 25px !important;
-    font-weight: 700;
+    font-weight: 800;
   }
   .phone-number a{
     color:gainsboro;

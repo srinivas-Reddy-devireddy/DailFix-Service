@@ -71,7 +71,7 @@ const Home2 = () => {
         <div className="hero-content">
           <h1>Quick Service/Repair <span>Across Hyderabad</span></h1>
           <p> 
-            Hyderabad DailFix Service is a professional home appliance repair company. Since 2013, it has been our belief that our customers deserve top quality service and repairs at a fair price.
+            Hyderabad DialFix Service is a professional home appliance repair company. Since 2013, it has been our belief that our customers deserve top quality service and repairs at a fair price.
           </p>
           <p className="mission">
             Our mission is to serve our customers with quality service and Reapir a guarantee on all work undertaken.
@@ -110,7 +110,7 @@ const Home2 = () => {
         </ul>
           </div>
           <div className="why-choose">
-            <h3>Why Choose Hyderabad DailFix Service for  Repair Service in Hyderabad?</h3>
+            <h3>Why Choose Hyderabad DialFix Service for  Repair Service in Hyderabad?</h3>
             <ul>
               <li>Qualified Technicians</li>
               <li>In-house Technicians with 10+ years of experience</li>
@@ -121,6 +121,7 @@ const Home2 = () => {
             </ul>
           </div>
         </div>
+        
       </section>
       
 
@@ -132,7 +133,7 @@ const Home2 = () => {
         <p>Our Service Specialists, Available 7:00 AM to 11:00 PM Everyday</p>
       </div>
      
-      <Link to='/Home/booking-form/' className='Link'> <button href="" className="book-service-button"> <span role="img" aria-label="phone">📞 Book Service Now</span> </button> </Link> 
+      <Link to='/Home/booking-form/' className='Link'> <button href="" className="book-service-button"> <span role="img" aria-label="phone">Book Service Now</span> </button> </Link> 
      
     </section>
 
@@ -143,7 +144,7 @@ const Home2 = () => {
      <h2>Book us for a completely <span>100% hassle-free</span> experience</h2>
         <div className="feature-steps">
           <div className="feature-step ">
-          <a href="tel:+9908305008" className="cta-button">
+          <a href="tel:9908305008" className="cta-button">
           <div className="icon-circle call-hover">
               <FaPhoneAlt className="feature-icon" />
             </div>
@@ -184,4 +185,4 @@ const Home2 = () => {
   );
 };
 
-export default Home2;
+export default Home2;  

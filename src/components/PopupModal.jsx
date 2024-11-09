@@ -23,13 +23,13 @@ function PopupModal({ closeModal }) {
          </p>
          <h4> Expert Technicians | 24/7 Service | Book Now</h4>
          <ul className="why-choose-us">
-      <h4>Why Choose Us</h4>
+      <h4 style={{marginLeft:"-20px"}}>Why Choose Us</h4>
       <li><FaCheck className="icon" /> Prompt Service</li>
       <li><FaCheck className="icon" /> Skilled Technicians</li>
       <li><FaCheck className="icon" /> Transparent Pricing</li>
       <li><FaCheck className="icon" /> Customer Satisfaction</li>
     </ul>
-          <a href="tel:+9908305008" className="call-button green">
+          <a href="tel:9908305008" className="call-button green">
             Call Us Now
           </a>
           <button className="call-button" onClick={closeModal}>Start Now</button>

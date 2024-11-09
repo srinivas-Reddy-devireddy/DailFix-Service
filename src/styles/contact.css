@@ -4,8 +4,8 @@
     margin: auto;
   }
   
-  .background-image {
-    background-image: url('https://www.shutterstock.com/image-photo/air-conditioner-maintenance-male-technician-600nw-2473467597.jpg');
+  .background-image-contact {
+    background-image: url('../assets/contactus.png');
    text-align: center;
    color: black;
   background-size: cover;
@@ -138,10 +138,14 @@ font-size: 26px;
 
 .contat-form{
 flex: 1;
-background-color: gray;
+background-color: whitesmoke;
 margin-top: 55px;
 padding: 10px;
 border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+align-self: center;
 }
 
 
@@ -155,7 +159,7 @@ border-radius: 5px;
         
       }
       
-      .background-image {
+      .background-image-contact {
        height: 200px;
       }
     
@@ -231,17 +235,7 @@ border-radius: 5px;
   }
 
 
-
-
-
-
-
-
-
-
-
- 
-  .data-page {
+/* .data-page {
     padding: 20px;
     font-family: Arial, sans-serif;
 }
@@ -256,7 +250,7 @@ input[type="text"] {
     padding: 10px;
     width: 100%;
     max-width: 400px;
-    margin: 0 auto 20px;
+    margin:0px;
     display: block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -292,4 +286,4 @@ tr:hover {
 
 td {
     color: #555;
-}
+} */

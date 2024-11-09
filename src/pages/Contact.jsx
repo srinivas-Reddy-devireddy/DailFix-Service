@@ -2,13 +2,13 @@ import React from "react";
 import Form from '../components/Form'
 import '../styles/contact.css'
 import { FaPhone, FaEnvelope } from 'react-icons/fa';
-import Footer from "./Footer";
+
 
 const ContactUs = () => {
   return (
     <section className="about-section">
 
-    <div className="background-image">
+    <div className="background-image-contact">
      <h1 className='about'>Contact</h1>
     </div>
 
@@ -63,8 +63,8 @@ const ContactUs = () => {
     </div>
 
       <div className="contat-form">
+      <Form/>
       
-        <Form/>
       </div>
 
 

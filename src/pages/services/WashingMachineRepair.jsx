@@ -15,7 +15,7 @@ const WashingMachineRepair = () => {
   return (
     <div className='service-section  '>
        <div className="service-washing-background-image">
-     <h1 className='about'>Washing Machine Repair/Service</h1>
+     <h1 className='about-service'>Washing Machine Repair/Service</h1>
     </div>
 <div className='container-row slide-in'>
 <div className='service-img-container'>
@@ -51,11 +51,10 @@ const WashingMachineRepair = () => {
         </div>
 
         {/* Why Choose Us Section */}
-        <div className='why-choose-us'>
+        <div className='service-offered'>
           <h2>Why Choose Us?</h2>
-          <p>Our experienced technicians provide reliable repairs that earn customer trust.</p>
           <ul>
-            <li>Experienced technicians</li>
+            <li> Experienced technicians</li>
             <li>100% customer satisfaction guarantee</li>
             <li>Transparent pricing</li>
             <li>Genuine spare parts</li>

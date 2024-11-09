@@ -11,7 +11,7 @@ const About = () => {
 
   return (
     <section className="about-section">
-      <div className="background-image">
+      <div className="background-image-about">
        <h1 className='about'>About</h1>
       </div>
       <div className="about-container slide-in ">
@@ -65,7 +65,7 @@ const About = () => {
         </p>
 
         <div className="contact-section" data-aos="fade-up">
-          <button>📞 Dial: <a href="tel:+9908305008">9908305008</a></button>
+          <button>📞 Dial: <a href="tel:9908305008">9908305008</a></button>
         </div>
      
 

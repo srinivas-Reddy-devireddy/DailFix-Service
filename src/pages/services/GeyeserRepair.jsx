@@ -15,7 +15,7 @@ const GeyserRepair= () => {
   return (
     <div className='service-section  '>
        <div className="service-geyeser-background-image">
-     <h1 className='about'>Geyser Repair/Service</h1>
+     <h1 className='about-service'>Geyser Repair/Service</h1>
     </div>
 <div className='container-row slide-in'>
 <div className='service-img-container'>
@@ -47,9 +47,8 @@ const GeyserRepair= () => {
     </div>
 
     {/* Why Choose Us Section */}
-    <div className='why-choose-us'>
+    <div className='service-offered'>
       <h2>Why Choose Us?</h2>
-      <p>Our skilled technicians provide dependable repairs, giving customers confidence and peace of mind.</p>
       <ul>
         <li>Certified and experienced technicians</li>
         <li>Customer satisfaction guarantee</li>

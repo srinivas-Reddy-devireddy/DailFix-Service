@@ -33,14 +33,14 @@ const Navbar = () => {
        <Link to='/Home/booking-form/' className='Link'><button className='top-button'> Quick Booking Service <FaArrowRight className='icons-header'/></button> </Link> 
       </div>
       <nav className="main-nav">
-        {/* 1st logo part */}
+       
         <Link to="/" className='Link'> 
         <div className='logo-section'>
          
           <img src={dfs} alt="Logo" />
           <div className="logo" >
             <h2>
-              <span>D</span>ail
+              <span>D</span>ial
               <span>F</span>ix
               <span> S</span>ervices
             </h2>

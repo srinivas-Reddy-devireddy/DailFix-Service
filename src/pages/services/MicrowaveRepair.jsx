@@ -15,7 +15,7 @@ const MicrowaveRepair = () => {
   return (
     <div className='service-section  '>
        <div className="service-Microwave-background-image">
-     <h1 className='about'>Microwave Repair/Service</h1>
+     <h1 className='about-service'>Microwave Repair/Service</h1>
     </div>
 <div className='container-row slide-in'>
 <div className='service-img-container'>
@@ -47,9 +47,8 @@ const MicrowaveRepair = () => {
     </div>
 
     {/* Why Choose Us Section */}
-    <div className='why-choose-us'>
-      <h2>Why Choose Us?</h2>
-      <p>Our experienced technicians deliver dependable repairs that inspire customer confidence.</p>
+    <div className='service-offered'>  
+          <h2>Why Choose Us?</h2>
       <ul>
         <li>Certified and experienced technicians</li>
         <li>Customer satisfaction guarantee</li>
