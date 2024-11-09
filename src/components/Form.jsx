@@ -171,6 +171,21 @@ const Form = () => {
         serviceType: ''
     });
 
+
+//      const [value, setValue] = useState('');
+//   const [error, setError] = useState('');
+
+//   const handleChange = (e) => {
+    // const newValue = e.target.value;
+
+    // // Allow only numeric values and update the state
+    // if (/^[0-9]*$/.test(newValue)) {
+    //   setValue(newValue);
+    //   setError(newValue.length === 10 ? '' : 'Phone number must be exactly 10 digits');
+    // } else {
+    //   setError('Please enter a valid phone number (only digits allowed)');
+    // }
+//   }
     useEffect(() => {
         const checkTime = () => {
             const currentHour = new Date().getHours();
@@ -185,6 +200,18 @@ const Form = () => {
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
+
+        // const newValue = mobile.target.value;
+
+        // Allow only numeric values and update the state
+        // if (/^[0-9]*$/.test(newValue)) {
+        //   setValue(newValue);
+        //   setError(newValue.length === 10 ? '' : 'Phone number must be exactly 10 digits');
+        // } else {
+        //   setError('Please enter a valid phone number (only digits allowed)');
+        // }
+
+        
     };
 
     const handleSubmit = (e) => {
@@ -197,7 +224,7 @@ const Form = () => {
         const whatsappMessage = encodeURIComponent(message);
         
         // WhatsApp API URL
-        const whatsappUrl = `https://wa.me/919133870617?text=${whatsappMessage}`;
+        const whatsappUrl = `https://wa.me/919989183030?text=${whatsappMessage}`;
 
         // Show alert
         alert("Submission completed successfully. Click OK to send your request via WhatsApp.");
@@ -232,8 +259,12 @@ const Form = () => {
                     placeholder="Mobile No." 
                     value={formData.mobile}
                     onChange={handleInputChange} 
+                    // onChange={ handleChange}
                     required 
-                />
+                //    min={10}
+maxLength={10}
+                />  
+                 {/* {error && <p style={{ color: 'red' }}>{error}</p>} */}
                 <input 
                     type="text" 
                     name="address" 
