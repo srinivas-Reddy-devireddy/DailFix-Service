@@ -18,6 +18,7 @@ import AirConditioner from './pages/services/AirConditioner';
 import PopupModal from './components/PopupModal';
 import LoadingSpinner from './components/LoadingSpinner';
 import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop component
+import Confirmation from './components/Confirmation';
 // import AdminData from './components/AdminData';
 
 
@@ -52,8 +53,9 @@ function App() {
             <Route path="/service/AirConditioner/" element={<AirConditioner />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/Home/booking-form/" element={<ContactForm />} />
-            {/* <Route path="users-data-admin" element={<AdminData/>} /> */}
-             <Route path="*" element={<NotFound />} />
+       
+              <Route path="/confirmation" element={<Confirmation />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>

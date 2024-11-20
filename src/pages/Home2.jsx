@@ -10,6 +10,8 @@ import imge4 from '../assets/washing_machine_technician_4.jpg'
 import imge5 from '../assets/washing_machine_2.jpg'
 import '../styles/home.css';
 import { Link } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa'; // Import the FaUser icon
+
 
 const Home2 = () => {
   const [experience, setExperience] = useState(0);
@@ -48,7 +50,7 @@ const Home2 = () => {
           clearInterval(interval);
           return targetSatisfaction;
         });
-      }, 800);
+      }, 1100);
     }
   }, [satisfaction]);
 
@@ -83,7 +85,7 @@ const Home2 = () => {
               <p className='sta-paragrap'>Years Experience</p>
             </div>
             <div className="stat">
-              <FaToolbox className="icon" />
+              <FaUser className="icon" />
               <h2 className='animation-exp' >{satisfaction}%</h2>
               <p className='sta-paragrap'>Customer Satisfaction</p>
             </div>

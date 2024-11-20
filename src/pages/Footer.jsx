@@ -38,18 +38,20 @@ const Footer = () => {
 
       <div className="social-media-icons">
         <h3>Follow Us</h3>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="facebook" aria-label="Facebook">
+        <a href="https://www.facebook.com/dialfixindia?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" className="facebook" aria-label="Facebook">
           <FaFacebook />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter" aria-label="Twitter">
+        {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="twitter" aria-label="Twitter">
           <FaTwitter />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="instagram" aria-label="Instagram">
+        </a> */}
+        <a href="https://www.instagram.com/dialfixservice?igsh=MXA2YXh0emdoNHFsbg==" target="_blank" rel="noopener noreferrer" className="instagram" aria-label="Instagram">
           <FaInstagram />
         </a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin" aria-label="LinkedIn">
+
+        {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="linkedin" aria-label="LinkedIn">
           <FaLinkedin />
-        </a>
+        </a> */}
+
       </div>
     </div>
 <div className="map-container">

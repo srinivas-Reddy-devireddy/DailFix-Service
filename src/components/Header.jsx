@@ -25,7 +25,7 @@ const Navbar = () => {
     <>
       <div className='header-top'>
         <div>
-          <p> <IoLocationOutline className='icons-header' />DailFix Services Secunderabad, Hyderabad </p>
+          <p> <IoLocationOutline className='icons-header' />DailFix Services  Hyderabad, Secunderabad </p>
           <p>
             < BsClockHistory  className='icons-header' />Monday - Sunday: 7:00AM - 11:00PM
           </p>

@@ -222,7 +222,7 @@ input, select {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 0px;
  
 
 }
@@ -247,7 +247,7 @@ input, select {
   font-weight: 800;
 }
 .tick-mark-bottom-text{
-  color:ghostwhite;
+  color:rgb(80, 61, 61);
   font-weight: 700;
 
 }
@@ -1111,3 +1111,11 @@ background-image: url('../assets//mobilehomeimg.png');
       padding: 20px; /* Larger button padding */
   }
 }
+
+
+
+
+
+
+
+

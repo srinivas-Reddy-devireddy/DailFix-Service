@@ -21,7 +21,7 @@ function PopupModal({ closeModal }) {
          
           <p className='service-pop'>Washing Machines | Fridges | Microwaves | Geyser | Freezer
          </p>
-         <h4> Expert Technicians | 24/7 Service | Book Now</h4>
+         <h4> Expert Technicians | 24/7 customer Service | Book Now</h4>
          <ul className="why-choose-us">
       <h4 style={{marginLeft:"-20px"}}>Why Choose Us</h4>
       <li><FaCheck className="icon" /> Prompt Service</li>
