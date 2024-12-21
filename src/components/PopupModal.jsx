@@ -12,7 +12,7 @@ function PopupModal({ closeModal }) {
   return (
     <div className="popup-modal-overlay">
       <div className="popup-modal">
-        {/* Close Icon in top-right corner */}
+       
         <span className="close-icon" onClick={closeModal}>&times;</span>
         
         <h2>Welcome to DailFix Service</h2>

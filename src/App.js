@@ -15,16 +15,38 @@ import GeyserRepair from './pages/services/GeyeserRepair';
 import NotFound from './pages/NotFound';
 import FridgeRepair from './pages/services/FridgeRepair';
 import AirConditioner from './pages/services/AirConditioner';
-import PopupModal from './components/PopupModal';
-import LoadingSpinner from './components/LoadingSpinner';
+// import PopupModal from './components/PopupModal';
+// import LoadingSpinner from './components/LoadingSpinner';
 import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop component
 import Confirmation from './components/Confirmation';
 // import AdminData from './components/AdminData';
+import ReactPixel from 'react-facebook-pixel';
+import TagManager from 'react-gtm-module'; // Import GTM module
+
+
+
+
+
+
 
 
 function App() {
   const [showModal, setShowModal] = useState(true);
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Initialize Facebook Pixel
+    ReactPixel.init('1502258350628246', {
+      autoConfig: true,
+      debug: false,
+    });
+    ReactPixel.pageView(); // Track the initial page view
+  }, []); // This useEffect runs only once on component mount
+
+  useEffect(() => {
+    // Initialize Google Tag Manager with the provided GTM ID
+    TagManager.initialize({ gtmId: 'GTM-5FJRFR79' });  // Replace 'GTM-XXXXXXX' with your actual GTM ID
+  }, []);
 
   useEffect(() => {
     const loadingTimer = setTimeout(() => setLoading(false), 2000); // Show spinner for 2 seconds
@@ -36,10 +58,10 @@ function App() {
   return (
     <Router>
     <ScrollToTop /> {/* Add ScrollToTop here */}
-    {loading && <LoadingSpinner />}
-    {!loading && (
+    {/* {loading && <LoadingSpinner />}
+    {!loading && ( */}
       <>
-        {showModal && <PopupModal closeModal={closeModal} />}
+        {/* {showModal && <PopupModal closeModal={closeModal} />} */}
         <Header />
         <div className="content">
           <Routes>
@@ -54,16 +76,16 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/Home/booking-form/" element={<ContactForm />} />
        
-              <Route path="/confirmation" element={<Confirmation />} />
+              <Route path="/thank-you" element={<Confirmation />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>
       </>
-    )}
+    {/* )} */}
 
     {/* Floating Round Icon Buttons, only visible when not loading */}
-    {!loading && (
+    {/* {!loading && ( */}
       <div className="floating-icons">
         <a href="tel:9908305008" className="icon-button call" aria-label="Call">
           <FaPhoneAlt />
@@ -72,7 +94,7 @@ function App() {
           <FaWhatsapp />
         </a>
       </div>
-    )}
+    {/* )} */}
   </Router>
   )
 }

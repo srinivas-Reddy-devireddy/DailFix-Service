@@ -71,19 +71,19 @@ const HomeContent = () => {
             <div className="features">
                 <div className="feature">
                   <div className="circle">
-                    <div className="tick-mark">&#10004;</div>
+                    <div className="tick-mark" style={{color:"green"}}>&#10004;</div>
                   </div>
                   <span className="tick-mark-bottom-text">Since 10+ Years</span>
                 </div>
                 <div className="feature">
                   <div className="circle">
-                    <div className="tick-mark">&#10004;</div>
+                    <div className="tick-mark" style={{color:"green"}}>&#10004;</div>
                   </div>
                   <span className="tick-mark-bottom-text">100% On-time Service Guaranteed</span>
                 </div>
                 <div className="feature">
-                  <div className="circle">
-                    <div className="tick-mark">&#10004;</div>
+                  <div className="circle" >
+                    <div className="tick-mark" style={{color:"green"}}>&#10004;</div>
                   </div>
                   <span className="tick-mark-bottom-text">Trusted Technicians</span>
                 </div>

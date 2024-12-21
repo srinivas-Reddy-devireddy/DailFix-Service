@@ -22,45 +22,55 @@
           'currency': 'INR'
       });
     </script> 
+
+
+<!-- Meta Pixel Code -->
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1502258350628246');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1502258350628246&ev=PageView&noscript=1"
+  /></noscript>
+
+  <!-- End Meta Pixel Code -->
+<!-- Google Tag Manager -->
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; // Fixed this line
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5FJRFR79'); // Make sure the GTM ID is passed correctly here
+</script>
+
+<!-- End Google Tag Manager -->
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16784231862">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-5FJRFR79">
     </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
     
-      gtag('config', 'AW-16784231862');
+      gtag('config', 'GTM-5FJRFR79');
     </script>
   </body>
-</html> 
-
-
-
-
-
-  
-   
-  <!-- <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-16784231862/NzioCJXxm-wZELabrMM-',
-        'value': 1.0,
-        'currency': 'INR'
-    });
-  </script> -->
- 
-   
-      <!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16784231862">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16784231862');
-</script> -->
-  
+</html>

@@ -585,8 +585,22 @@ list-style-type: square;
    
   
 }
+.phone-number a {
+  color: gainsboro;
+  font-size: 23px !important;
+  font-weight: 700;
+  text-decoration: none;
+  animation: blink 3s infinite;
+}
 
-
+@keyframes blink {
+  0%, 100% {
+    color: gainsboro;
+  }
+  50% {
+    color: #038a4e;
+  }
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
 

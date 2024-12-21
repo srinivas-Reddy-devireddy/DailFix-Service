@@ -485,7 +485,7 @@ const Form = () => {
                     console.log('SUCCESS!', result.text);
 
                     // Navigate to the confirmation page after success
-                    navigate('/confirmation');
+                    navigate('/thank-you');
                 },
                 (error) => {
                     console.error('FAILED...', error);

@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import '../styles/loadpop.css';
 
 // import notFoundImage from '../assets/notfound.jpg'; 
-
-
 const NotFound = () => {
     return (
         <div className="not-found">
